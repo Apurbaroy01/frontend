@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
+import Navbar from "@/components/Shared/Navbar";
+import AOSProvider from "@/components/Shared/AOSProvider";
+
 
 
 const geistSans = Geist({
@@ -31,6 +34,9 @@ export default function RootLayout({
       >
          {/* Background */}
         <AnimatedGridPattern className="fixed inset-0 -z-10" />
+
+        <AOSProvider />
+        <Navbar />
 
         {/* Content */}
         <div className="relative z-10 text-white">
