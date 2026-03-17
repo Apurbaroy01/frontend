@@ -29,8 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AnimatedGridPattern />
-        {children}
+         {/* Background */}
+        <AnimatedGridPattern className="fixed inset-0 -z-10" />
+
+        {/* Content */}
+        <div className="relative z-10 text-white">
+          {children}
+        </div>
       </body>
     </html>
   );
