@@ -37,9 +37,10 @@ export default function RootLayout({
 
         <AOSProvider />
         <Navbar />
+        
 
         {/* Content */}
-        <div className="relative z-10 text-white">
+        <div className="relative z-10 text-white mt-25">
           {children}
         </div>
       </body>
