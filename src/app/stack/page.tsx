@@ -11,6 +11,29 @@ import {
   SiRedis,
   SiDocker,
   SiNginx,
+  SiJsonwebtokens,
+  SiJson,
+  SiFastapi,
+  SiSocketdotio,
+  SiNpm,
+  SiPostman,
+  SiFirebase,
+  SiGithub,
+  SiGit,
+  SiLinux,
+  SiCpanel,
+  SiAuth0,
+  SiHostinger,
+  SiVercel,
+  SiNetlify,
+  SiHtml5,
+  SiRadixui,
+  SiMui,
+  SiCss,
+  SiTailwindcss,
+  SiReactquery,
+  SiReactrouter,
+  SiVsco,
 } from "react-icons/si";
 
 const stack = [
@@ -69,6 +92,136 @@ const stack = [
     icon: <SiNginx className="text-green-500" size={24} />,
     desc: "Reverse proxy & load balancing",
   },
+  {
+  name: "VPS Server",
+  icon: <SiLinux size={24} className="text-gray-300" />,
+  desc: "Self-managed virtual private server deployment",
+},
+{
+  name: "CloudPanel",
+  icon: <SiCpanel size={24} className="text-indigo-400" />,
+  desc: "Server control panel for managing web apps",
+},
+{
+  name: "Linux",
+  icon: <SiLinux size={24} className="text-yellow-400" />,
+  desc: "Operating system for servers and development",
+},
+{
+  name: "Git",
+  icon: <SiGit size={24} className="text-orange-400" />,
+  desc: "Version control system",
+},
+{
+  name: "GitHub",
+  icon: <SiGithub size={24} />,
+  desc: "Code hosting & collaboration platform",
+},
+{
+  name: "Firebase",
+  icon: <SiFirebase size={24} className="text-yellow-400" />,
+  desc: "Backend services & hosting platform",
+},
+{
+  name: "Postman",
+  icon: <SiPostman size={24} className="text-orange-500" />,
+  desc: "API testing and debugging tool",
+},
+{
+  name: "VS Code",
+  icon: <SiVsco size={24} className="text-blue-400" />,
+  desc: "Code editor for development",
+},
+{
+  name: "NPM",
+  icon: <SiNpm size={24} className="text-red-500" />,
+  desc: "Package manager for JavaScript",
+},
+{
+  name: "Socket.io",
+  icon: <SiSocketdotio size={24} />,
+  desc: "Real-time communication",
+},
+{
+  name: "REST API",
+  icon: <SiFastapi size={24} className="text-green-400" />,
+  desc: "RESTful API architecture",
+},
+{
+  name: "JSON",
+  icon: <SiJson size={24} className="text-yellow-300" />,
+  desc: "Data format for APIs",
+},
+{
+  name: "JWT Auth",
+  icon: <SiJsonwebtokens size={24} className="text-pink-400" />,
+  desc: "Token-based authentication",
+},
+{
+  name: "OAuth",
+  icon: <SiAuth0 size={24} className="text-orange-400" />,
+  desc: "Third-party authentication system",
+},
+{
+  name: "Firebase Auth",
+  icon: <SiFirebase size={24} className="text-yellow-500" />,
+  desc: "Authentication with Firebase",
+},
+{
+  name: "Hostinger VPS",
+  icon: <SiHostinger size={24} className="text-purple-400" />,
+  desc: "Cloud VPS hosting platform",
+},
+{
+  name: "Vercel",
+  icon: <SiVercel size={24} />,
+  desc: "Frontend deployment platform",
+},
+{
+  name: "Netlify",
+  icon: <SiNetlify size={24} className="text-cyan-400" />,
+  desc: "Static site hosting & CI/CD",
+},
+{
+  name: "React Router",
+  icon: <SiReactrouter size={24} className="text-red-400" />,
+  desc: "Routing library for React",
+},
+{
+  name: "React Query",
+  icon: <SiReactquery size={24} className="text-pink-500" />,
+  desc: "Data fetching & caching",
+},
+{
+  name: "Tailwind CSS",
+  icon: <SiTailwindcss size={24} className="text-cyan-400" />,
+  desc: "Utility-first CSS framework",
+},
+{
+  name: "DaisyUI",
+  icon: <SiCss size={24} className="text-teal-400" />,
+  desc: "Tailwind component library",
+},
+{
+  name: "Material UI",
+  icon: <SiMui size={24} className="text-blue-500" />,
+  desc: "React UI component library",
+},
+{
+  name: "Shadcn UI",
+  icon: <SiRadixui size={24} />,
+  desc: "Accessible UI components",
+},
+{
+  name: "HTML5",
+  icon: <SiHtml5 size={24} className="text-orange-500" />,
+  desc: "Markup language for web",
+},
+{
+  name: "CSS3",
+  icon: <SiCss size={24} className="text-blue-400" />,
+  desc: "Styling language for web",
+}
 ];
 
 export default function Stack() {
