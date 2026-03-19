@@ -1,6 +1,8 @@
 "use client";
 
 import { MeteorsDemo } from "@/components/MeteorsDemo";
+import { Meteors } from "@/components/ui/meteors";
+import Image from "next/image";
 import { FiClock, FiFolder } from "react-icons/fi";
 
 export default function About() {
@@ -22,18 +24,17 @@ export default function About() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-12 gap-8">
+            <div className="flex md:flex-row flex-col  gap-8">
 
                 {/* Main Card */}
-                <div className="col-span-8">
+                <div className="flex flex-col gap-8">
                     <MeteorsDemo></MeteorsDemo>
-
                 </div>
 
 
 
                 {/* Stats */}
-                <div className="col-span-4 flex flex-col gap-6 w-full ">
+                <div className="flex flex-col gap-6 w-full ">
 
                     {/* Stat 1 */}
                     <div className="flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-500">
