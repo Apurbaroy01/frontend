@@ -4,6 +4,7 @@ import "./globals.css";
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
 import Navbar from "@/components/Shared/Navbar";
 import AOSProvider from "@/components/Shared/AOSProvider";
+import Footer from "@/components/footer";
 
 
 
@@ -43,6 +44,8 @@ export default function RootLayout({
         <div className="relative z-10 text-white mt-25">
           {children}
         </div>
+
+        <Footer />
       </body>
     </html>
   );
