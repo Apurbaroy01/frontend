@@ -1,9 +1,9 @@
 "use client";
 
 import { MeteorsDemo } from "@/components/MeteorsDemo";
-import { Meteors } from "@/components/ui/meteors";
 import Image from "next/image";
 import { FiClock, FiFolder } from "react-icons/fi";
+import image from '../../../public/apurba.jpg'
 
 export default function About() {
     return (
@@ -24,42 +24,56 @@ export default function About() {
                 </p>
             </div>
 
-            <div className="flex md:flex-row flex-col  gap-8">
+            <div className="flex flex-col md:flex-row gap-8 items-stretch">
 
-                {/* Main Card */}
-                <div className="flex flex-col gap-8">
-                    <MeteorsDemo></MeteorsDemo>
+                {/* Left Section */}
+                <div className="w-full md:w-1/2 flex flex-col gap-8">
+                    <MeteorsDemo />
+
+                    {/* Stats */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                        {/* Stat 1 */}
+                        <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                            <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
+                                <FiClock size={20} />
+                            </div>
+                            <div>
+                                <p className="text-xl font-semibold">3+ Years</p>
+                                <p className="text-sm text-zinc-400">
+                                    Continuous Development
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Stat 2 */}
+                        <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                            <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
+                                <FiFolder size={20} />
+                            </div>
+                            <div>
+                                <p className="text-xl font-semibold">15+ Projects</p>
+                                <p className="text-sm text-zinc-400">
+                                    Successfully Delivered
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
+                {/* Right Section */}
+                <div className="w-full md:w-1/2 flex flex-col gap-6">
 
-
-                {/* Stats */}
-                <div className="flex flex-col gap-6 w-full ">
-
-                    {/* Stat 1 */}
-                    <div className="flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-500">
-                        <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
-                            <FiClock size={24} />
-                        </div>
-                        <div>
-                            <p className="text-2xl font-semibold">3+ Years</p>
-                            <p className="text-sm text-zinc-400">
-                                Continuous Development
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Stat 2 */}
-                    <div className="flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-500">
-                        <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
-                            <FiFolder size={24} />
-                        </div>
-                        <div>
-                            <p className="text-2xl font-semibold">15+ Projects</p>
-                            <p className="text-sm text-zinc-400">
-                                Successfully Delivered
-                            </p>
-                        </div>
+                    {/* Image Card */}
+                    <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-2">
+                        <Image
+                            src={image}
+                            alt="apurba"
+                            width={300}
+                            height={300}
+                            className="w-full object-cover rounded-xl"
+                        />
                     </div>
 
                 </div>

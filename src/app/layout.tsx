@@ -4,7 +4,8 @@ import "./globals.css";
 import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
 import Navbar from "@/components/Shared/Navbar";
 import AOSProvider from "@/components/Shared/AOSProvider";
-import Footer from "@/components/footer";
+import Footer from "@/components/Shared/footer";
+import { cn } from "@/lib/utils";
 
 
 
@@ -33,12 +34,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         {/* Background */}
-        <AnimatedGridPattern className="fixed inset-0 -z-10" />
+        {/* Background */}
+        <AnimatedGridPattern
+         numSquares={30}
+        className={cn(
+          "[mask-image:radial-gradient(500px_transparent)]",
+          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12 fixed",
+        )}
+        />
 
         <AOSProvider />
         <Navbar />
-        
+
 
         {/* Content */}
         <div className="relative z-10 text-white mt-25">

@@ -6,7 +6,6 @@ import Hero from "./hero/page";
 import Stack from "./stack/page";
 import ConnectSection from "@/components/ConnectSection";
 
-
 export default function Home() {
   return (
     <div >
@@ -15,8 +14,7 @@ export default function Home() {
       <Stack />
       <ProjectsSection />
       <ConnectSection />
-      
-      
+
     </div>
   );
 }
