@@ -276,13 +276,13 @@ export default function Stack() {
             : stack.filter((item) => item.category === activeTab);
 
     return (
-        <section className="w-full max-w-6xl mx-auto px-6 py-24 text-white relative">
+        <section className="w-full max-w-6xl mx-auto px-6 py-5 text-white relative">
 
             {/* Glow */}
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 via-cyan-500/10 to-green-500/10 blur-3xl"></div>
 
             {/* Heading */}
-            <div className="mb-12">
+            <div className="mb-12 text-center">
                 <h2 className="text-3xl font-semibold">Core Infrastructure</h2>
                 <p className="text-sm text-zinc-400">
                     Technologies I use to build scalable production systems.
@@ -316,8 +316,8 @@ export default function Stack() {
             {/* Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {filteredStack.map((item, i) => (
-                    <div
-                        key={i}
+                    
+                    <div key={i}
                         className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
                     >
                         <div className="flex flex-col gap-4">
