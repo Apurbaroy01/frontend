@@ -22,6 +22,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Apurba | Portfolio",
   description: "Apurba's Portfolio",
+  icons: {
+    icon: "/public/logo.png",
+  },
 };
 
 export default function RootLayout({
