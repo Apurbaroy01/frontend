@@ -1,5 +1,6 @@
 "use client";
 
+import { BorderBeam } from "@/components/ui/border-beam";
 import { useState } from "react";
 import {
     SiMongodb,
@@ -318,7 +319,7 @@ export default function Stack() {
                 {filteredStack.map((item, i) => (
                     
                     <div key={i}
-                        className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
+                        className=" group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
                     >
                         <div className="flex flex-col gap-4">
                             <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 border border-white/20 group-hover:scale-110 transition">
@@ -332,6 +333,7 @@ export default function Stack() {
                                 </p>
                             </div>
                         </div>
+                        
                     </div>
                 ))}
             </div>

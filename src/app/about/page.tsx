@@ -4,6 +4,7 @@ import { MeteorsDemo } from "@/components/MeteorsDemo";
 import Image from "next/image";
 import { FiClock, FiFolder } from "react-icons/fi";
 import image from '../../../public/apurba.jpg'
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function About() {
     return (
@@ -31,10 +32,10 @@ export default function About() {
                     <MeteorsDemo />
 
                     {/* Stats */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className=" grid grid-cols-1 sm:grid-cols-2 gap-6">
 
                         {/* Stat 1 */}
-                        <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                        <div className="relative flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                             <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
                                 <FiClock size={20} />
                             </div>
@@ -44,10 +45,11 @@ export default function About() {
                                     Continuous Development
                                 </p>
                             </div>
+                            <BorderBeam size={165} duration={15} delay={5}/>
                         </div>
 
                         {/* Stat 2 */}
-                        <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                        <div className="relative flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                             <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
                                 <FiFolder size={20} />
                             </div>
@@ -57,6 +59,7 @@ export default function About() {
                                     Successfully Delivered
                                 </p>
                             </div>
+                            <BorderBeam size={165} duration={15} />
                         </div>
 
                     </div>
