@@ -4,22 +4,34 @@ import Image from "next/image";
 import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import image from '../../../public/apurba.jpg'
+import { CheckIcon } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative  flex items-center justify-center  text-white overflow-hidden">
 
       <div className="relative z-10 max-w-4xl text-center px-6">
-        
+
         {/* Avatar */}
         <div className="flex justify-center mb-6">
-          <Image
-            src={image} // replace with your image
-            alt="apurba"
-            width={80}
-            height={80}
-            className="rounded-full border border-gray-700"
-          />
+          <div className="relative w-30 h-30">
+
+            {/* Image */}
+            <Image
+              src={image}
+              alt="apurba"
+              fill
+              className="rounded-full object-cover border-2 border-gray-700 shadow-lg"
+              sizes="80px"
+              priority
+            />
+
+            {/* Verified badge */}
+            <span className="absolute right-1 bottom-1 flex h-8 w-8 items-center justify-center rounded-full bg-teal-500 border-2 border-black">
+              <CheckIcon className="h-3 w-3 text-white" />
+            </span>
+
+          </div>
         </div>
 
         {/* Title */}
