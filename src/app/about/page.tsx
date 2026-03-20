@@ -63,7 +63,7 @@ export default function About() {
                 </div>
 
                 {/* Right Section */}
-                <div className="w-full md:w-1/2 flex flex-col gap-6">
+                <div className="w-full md:w-1/2 flex flex-col gap-6 md:px-13 mx-auto ">
 
                     {/* Image Card */}
                     <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-2">
