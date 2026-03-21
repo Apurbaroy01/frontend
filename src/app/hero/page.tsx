@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import image from '../../../public/apurba.jpg'
 import { CheckIcon } from "lucide-react";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Hero() {
   return (
@@ -16,12 +17,21 @@ export default function Hero() {
         <div className="flex justify-center mb-6">
           <div className="relative w-30 h-30">
 
+            <BorderBeam
+              borderWidth={5}
+              size={70}
+              duration={4}
+              colorFrom="#ffaa90"
+              colorTo="#9c40ff"
+              className="rounded-full"
+            />
+
             {/* Image */}
             <Image
               src={image}
               alt="apurba"
               fill
-              className="rounded-full object-cover border-2 border-gray-700 shadow-lg"
+              className="rounded-full object-cover border-2 border-gray-700 shadow-lg p-1"
               sizes="80px"
               priority
             />
