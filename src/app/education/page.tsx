@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 const timelineData = [
     {
         id: 1,
-        date: "2022 — Present",
+        date: "2025 — Present",
         title: "Advanced MERN Certification",
         institute: "Modern Web Academy",
         icon: "solar:book-bookmark-linear",
@@ -14,6 +14,15 @@ const timelineData = [
     },
     {
         id: 2,
+        date: "2018 — 2022",
+        title: "B.Sc. Computer Science",
+        institute: "Tech University Institute",
+        icon: "solar:diploma-linear",
+        description:
+            "Specialized in software engineering, advanced data structures, and distributed systems. Graduated with honors, leading the final year full-stack engineering project.",
+    },
+    {
+        id: 3,
         date: "2018 — 2022",
         title: "B.Sc. Computer Science",
         institute: "Tech University Institute",
@@ -85,6 +94,7 @@ export default function EducationSection() {
 
                                         {/* Content */}
                                         <div className="relative z-10 backdrop-blur rounded-[calc(1.5rem-1px)] p-6 md:p-8 h-full border border-white">
+                                            
                                             <span className="md:hidden text-xs font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full border border-emerald-400/20 mb-3 inline-block">
                                                 {item.date}
                                             </span>
