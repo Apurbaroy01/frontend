@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Apurba | Portfolio",
   description: "Apurba's Portfolio",
   icons: {
-    icon: "/public/logo.png",
+    icon: "/logo.png",
   },
 };
 
