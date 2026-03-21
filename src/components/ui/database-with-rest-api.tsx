@@ -33,7 +33,7 @@ const DatabaseWithRestApi = ({
   return (
     <div
       className={cn(
-        "relative flex h-[350px] w-full  flex-col justify-center items-center ",
+        "relative flex h-[350px] w-full   flex-col justify-center items-center ",
         className
       )}
     >
