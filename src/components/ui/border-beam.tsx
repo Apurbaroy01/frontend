@@ -13,10 +13,10 @@ interface BorderBeamProps {
 
 export const BorderBeam = ({
   className,
-  size = 200,
+  size = 100,
   duration = 15,
   anchor = 90,
-  borderWidth = 1,
+  borderWidth = 2,
   colorFrom = "#ffaa90",
   colorTo = "#9c40ff",
   delay = 0,
@@ -35,7 +35,7 @@ export const BorderBeam = ({
         } as React.CSSProperties
       }
       className={cn(
-        "pointer-events-none absolute inset-0 rounded-[inherit] [border:calc(var(--border-width)*1px)_solid_transparent]",
+        "pointer-events-none  absolute inset-0 rounded-[inherit] [border:calc(var(--border-width)*1px)_solid_transparent]",
 
         // mask styles
         "![mask-clip:padding-box,border-box] ![mask-composite:intersect] [mask:linear-gradient(transparent,transparent),linear-gradient(white,white)]",

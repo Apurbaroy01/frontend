@@ -28,7 +28,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row gap-8 items-stretch">
 
                 {/* Left Section */}
-                <div className="w-full md:w-1/2 flex flex-col gap-8">
+                <div className="w-full md:w-1/2 flex flex-col  gap-8">
                     <MeteorsDemo />
 
                     {/* Stats */}
@@ -45,7 +45,7 @@ export default function About() {
                                     Continuous Development
                                 </p>
                             </div>
-                            <BorderBeam size={165} duration={15} delay={5}/>
+
                         </div>
 
                         {/* Stat 2 */}
@@ -59,7 +59,7 @@ export default function About() {
                                     Successfully Delivered
                                 </p>
                             </div>
-                            <BorderBeam size={165} duration={15} />
+
                         </div>
 
                     </div>
@@ -77,6 +77,7 @@ export default function About() {
                             height={300}
                             className="w-full object-cover rounded-xl"
                         />
+                        <BorderBeam  size={450} duration={10} />
                     </div>
 
                 </div>
