@@ -1,129 +1,148 @@
 "use client";
 
 import { Icon } from "@iconify/react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const timelineData = [
-    {
-        id: 1,
-        date: "2025 — Present",
-        title: "Advanced MERN Certification",
-        institute: "Modern Web Academy",
-        icon: "solar:book-bookmark-linear",
-        description:
-            "Intensive deep dive into React performance optimization, complex MongoDB aggregation pipelines, and secure Node.js API architecture. Focused on scalable patterns.",
-    },
-    {
-        id: 2,
-        date: "2018 — 2022",
-        title: "B.Sc. Computer Science",
-        institute: "Tech University Institute",
-        icon: "solar:diploma-linear",
-        description:
-            "Specialized in software engineering, advanced data structures, and distributed systems. Graduated with honors, leading the final year full-stack engineering project.",
-    },
-    {
-        id: 3,
-        date: "2018 — 2022",
-        title: "B.Sc. Computer Science",
-        institute: "Tech University Institute",
-        icon: "solar:diploma-linear",
-        description:
-            "Specialized in software engineering, advanced data structures, and distributed systems. Graduated with honors, leading the final year full-stack engineering project.",
-    },
+  {
+    id: 1,
+    date: "2025 — Present",
+    title: "Industrial Attachment (Web Development)",
+    institute: "TechLabs",
+    icon: "solar:code-linear",
+    description:
+      "Hands-on industry training focused on real-world web development, MERN stack projects, and production-level application building.",
+  },
+  {
+    id: 2,
+    date: "2024",
+    title: "Web Development Course",
+    institute: "Programming Hero",
+    icon: "solar:book-bookmark-linear",
+    description:
+      "Completed full-stack web development course covering React, Node.js, MongoDB, and modern frontend tools.",
+  },
+  {
+    id: 3,
+    date: "2020 — 2024",
+    title: "Diploma in Computer Engineering",
+    institute: "Mangrove Institute of Science & Technology",
+    icon: "solar:diploma-linear",
+    description:
+      "Focused on core computer engineering concepts, programming fundamentals, networking, and software development.",
+  },
+  {
+    id: 4,
+    date: "2018 — 2020",
+    title: "Secondary School Certificate (SSC)",
+    institute: "Kotalipara High School",
+    icon: "solar:book-linear",
+    description:
+      "Completed secondary education with a focus on science and mathematics.",
+  },
 ];
 
 export default function EducationSection() {
-    return (
-        <section
-            id="education"
-            className="w-full items-center flex flex-col gap-10 scroll-mt-32"
-        >
-            {/* Header */}
-            <div className="flex flex-col gap-2 text-center items-center">
-                <h2 className="text-2xl text-center font-medium tracking-tight text-zinc-100 flex items-center gap-3">
-                    Academic Foundation
-                </h2>
-                <p className="text-sm text-center text-zinc-500">
-                    Formal education and continuous learning trajectory.
-                </p>
-            </div>
+  const ref = useRef(null);
 
-            {/* Timeline */}
-            <div className="relative w-full max-w-4xl mx-auto mt-4">
-                {/* Vertical Line */}
-                <div className="absolute left-[19px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent md:-translate-x-1/2" />
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start center", "end center"],
+  });
 
-                <div className="flex flex-col gap-12">
-                    {timelineData.map((item, index) => {
-                        const isReverse = index % 2 !== 0;
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-                        return (
-                            <div
-                                key={item.id}
-                                className={`relative flex flex-col ${isReverse ? "md:flex-row-reverse" : "md:flex-row"
-                                    } items-start justify-between group`}
-                            >
-                                {/* Date (Desktop) */}
-                                <div
-                                    className={`hidden md:block md:w-[calc(50%-3rem)] ${isReverse ? "text-left" : "text-right"
-                                        } pt-4`}
-                                >
-                                    <span className="text-sm font-medium text-white tracking-tight">
-                                        {item.date}
-                                    </span>
-                                </div>
+  return (
+    <section className="relative bg-transparent w-full py-20 flex flex-col items-center overflow-hidden">
 
-                                {/* Node */}
-                                <div className="absolute left-0 md:left-1/2 w-10 h-10 rounded-full bg-black border border-white/10 flex items-center justify-center md:-translate-x-1/2 shadow-[0_0_15px_-3px_rgba(255,255,255,0.1)] group-hover:border-white/30 group-hover:shadow-[0_0_20px_-3px_rgba(255,255,255,0.2)] transition-all duration-500 z-10 mt-2 md:mt-0">
-                                    <div className="w-2 h-2 rounded-full bg-white group-hover:bg-white group-hover:scale-150 transition-all duration-500"></div>
-                                </div>
+      {/* 🔥 Background Depth */}
+      <div className="absolute w-[600px] h-[600px]  blur-[140px] rounded-full top-[-200px]" />
+      <div className="absolute w-[400px] h-[400px]  blur-[120px] rounded-full bottom-[-150px]" />
 
-                                {/* Card */}
-                                <div className="w-full pl-16 md:pl-0 md:w-[calc(50%-3rem)]">
-                                    <div className="relative rounded-3xl p-[1px] bg-white/[0.05] overflow-hidden">
-                                        {/* Hover Gradient */}
-                                        <div
-                                            className={`absolute inset-0 ${isReverse
-                                                    ? "bg-gradient-to-bl"
-                                                    : "bg-gradient-to-br"
-                                                } from-white/[0.08] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
-                                        />
+      {/* Header */}
+      <div className="text-center mb-16 z-10">
+        <h2 className="text-4xl font-semibold text-white tracking-tight">
+          Education Timeline
+        </h2>
+        <p className="text-zinc-400 text-sm mt-2">
+          A journey through structured learning and growth
+        </p>
+      </div>
 
-                                        {/* Border Beam */}
-                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] bg-[conic-gradient(from_0deg,transparent_0_340deg,rgba(255,255,255,0.3)_360deg)] animate-[spin_4s_linear_infinite] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      {/* Timeline Wrapper */}
+      <div ref={ref} className="relative w-full max-w-5xl">
 
-                                        {/* Content */}
-                                        <div className="relative z-10 backdrop-blur rounded-[calc(1.5rem-1px)] p-6 md:p-8 h-full border border-white">
-                                            
-                                            <span className="md:hidden text-xs font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded-full border border-emerald-400/20 mb-3 inline-block">
-                                                {item.date}
-                                            </span>
+        {/* 🔥 Base Line */}
+        <div className="absolute left-1/2 top-0 w-[2px] h-full bg-white/10 -translate-x-1/2" />
 
-                                            <h3 className="text-xl font-medium tracking-tight text-white flex items-center gap-2">
-                                                <Icon
-                                                    icon={item.icon}
-                                                    width="20"
-                                                    height="20"
-                                                    className="text-white"
-                                                />
-                                                {item.title}
-                                            </h3>
+        {/* 🔥 Animated Progress Line */}
+        <motion.div
+          style={{ height: lineHeight }}
+          className="absolute left-1/2 top-0 w-[2px] bg-blue-300 -translate-x-1/2"
+        />
 
-                                            <span className="text-sm text-white mt-1 block mb-4">
-                                                {item.institute}
-                                            </span>
+        <div className="flex flex-col gap-24">
+          {timelineData.map((item, i) => {
+            const reverse = i % 2 !== 0;
 
-                                            <p className="text-sm text-zinc-400 leading-relaxed font-light">
-                                                {item.description}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
+            return (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: i * 0.2 }}
+                viewport={{ once: true }}
+                className={`relative flex ${
+                  reverse ? "md:flex-row-reverse" : "md:flex-row"
+                } items-center`}
+              >
+                {/* LEFT / RIGHT CARD */}
+                <div className="w-full md:w-1/2 px-6">
+                  <motion.div
+                    whileHover={{ scale: 1.04, y: -5 }}
+                    transition={{ type: "spring", stiffness: 200 }}
+                    className="relative group"
+                  >
+                    {/* Glow */}
+                    <div className="absolute inset-0 bg-white/5 blur-xl opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl" />
+
+                    {/* Card */}
+                    <div className="relative bg-zinc-900/70 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-white/30 transition duration-500">
+                      
+                      <span className="text-xs text-emerald-400">
+                        {item.date}
+                      </span>
+
+                      <h3 className="text-lg font-semibold text-white mt-1">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-sm text-zinc-400 mt-1">
+                        {item.institute}
+                      </p>
+
+                      <p className="text-sm text-zinc-500 mt-3 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </motion.div>
                 </div>
-            </div>
-        </section>
-    );
+
+                {/* 🔥 Center Node */}
+                <div className="absolute left-1/2 -translate-x-1/2 z-10">
+                  <motion.div
+                    whileHover={{ scale: 1.2 }}
+                    className="w-14 h-14 rounded-full bg-gradient-to-br from-zinc-800 to-black border border-white/20 flex items-center justify-center shadow-xl"
+                  >
+                    <Icon icon={item.icon} className="text-white text-xl" />
+                  </motion.div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }
