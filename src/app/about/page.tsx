@@ -56,7 +56,7 @@ export default function About() {
                                 <FiFolder size={20} />
                             </div>
                             <div>
-                                <p className="text-xl font-semibold">10+ Projects</p>
+                                <p className="text-xl font-semibold">9+ Projects</p>
                                 <p className="text-sm text-zinc-400">
                                     Successfully Delivered
                                 </p>
