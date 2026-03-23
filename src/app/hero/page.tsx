@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+        <h1 className="text-2xl md:text-5xl font-bold leading-tight">
           Hey, I'm{" "}
           <span className="text-purple-400">Apurba Roy ✨</span>
           <br />

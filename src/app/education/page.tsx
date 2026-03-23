@@ -74,12 +74,12 @@ export default function EducationSection() {
       <div ref={ref} className="relative w-full max-w-5xl">
 
         {/* 🔥 Base Line */}
-        <div className="absolute left-1/2 top-0 w-[2px] h-full bg-white/10 -translate-x-1/2" />
+        <div className=" absolute left-1/2 top-0 w-[2px] h-full bg-white/10 -translate-x-1/2" />
 
         {/* 🔥 Animated Progress Line */}
         <motion.div
           style={{ height: lineHeight }}
-          className="absolute left-1/2 top-0 w-[2px] bg-blue-300 -translate-x-1/2"
+          className=" absolute left-1/2 top-0 w-[2px] bg-blue-300 -translate-x-1/2"
         />
 
         <div className="flex flex-col gap-24">
@@ -130,7 +130,7 @@ export default function EducationSection() {
                 </div>
 
                 {/* 🔥 Center Node */}
-                <div className="absolute left-1/2 -translate-x-1/2 z-10">
+                <div className="hidden md:block absolute left-1/2 -translate-x-1/2 z-10">
                   <motion.div
                     whileHover={{ scale: 1.2 }}
                     className="w-14 h-14 rounded-full bg-gradient-to-br from-zinc-800 to-black border border-white/20 flex items-center justify-center shadow-xl"
