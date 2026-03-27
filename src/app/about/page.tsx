@@ -3,7 +3,7 @@
 import { MeteorsDemo } from "@/components/MeteorsDemo";
 import Image from "next/image";
 import { FiClock, FiFolder } from "react-icons/fi";
-import image from '../../../public/apurba.jpg'
+import image from '../../../public/apurbaa.png'
 import { BorderBeam } from "@/components/ui/border-beam";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
@@ -68,7 +68,7 @@ export default function About() {
                 </div>
 
                 <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:px-10 mx-auto relative">
-
+                        
                     {/* Background Glow */}
                     <div className="absolute w-[220px] sm:w-[260px] md:w-[300px] h-[220px] sm:h-[260px] md:h-[300px] bg-emerald-500/10 blur-[100px] rounded-full -top-6 sm:-top-8 md:-top-10 -right-6 sm:-right-8 md:-right-10 pointer-events-none" />
 
@@ -114,7 +114,7 @@ export default function About() {
                         </div>
 
                         {/* Glow Border */}
-                        <div className="absolute inset-0 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none">
+                        <div className="absolute inset-0 rounded-xl sm:rounded-2xl opacity-0 group-hover:opacity-50 transition duration-500 pointer-events-none">
                             <div className="w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.15),transparent_70%)]" />
                         </div>
 

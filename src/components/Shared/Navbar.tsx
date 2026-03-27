@@ -21,7 +21,7 @@ const Navbar = () => {
                         <Image className="rounded-full" src={image} alt="apurba" width={80} height={80} />
                     </div>
 
-                    <span className="text-white font-medium tracking-tight text-sm hidden sm:block">
+                    <span className="text-white font-medium tracking-tight text-sm ">
                         Apurba Roy
                     </span>
                 </div>
@@ -53,8 +53,7 @@ const Navbar = () => {
                 {/* Right Side */}
                 <div className="flex items-center gap-2">
                     <button className="hidden sm:flex bg-white text-black px-5 py-2 rounded-full text-xs font-semibold hover:bg-zinc-200 transition-colors items-center gap-2">
-                        <FiAlignRight className="text-base" />
-                        <span>Enter AR</span>
+                        <span>Enter System</span>
                     </button>
 
                     {/* Mobile Menu Button */}
@@ -95,7 +94,7 @@ const Navbar = () => {
 
                         <button className="mt-2 flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-lg text-xs font-semibold hover:bg-zinc-200 transition">
                             <IoCloseSharp />
-                            Enter AR
+                            Enter System
                         </button>
                     </div>
                 </div>
