@@ -4,6 +4,7 @@ import { MeteorsDemo } from "@/components/MeteorsDemo";
 import Image from "next/image";
 import { FiClock, FiFolder } from "react-icons/fi";
 import image from '../../../public/apurbaa.png'
+import bg from '../../../public/bg.png'
 import { BorderBeam } from "@/components/ui/border-beam";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
@@ -68,7 +69,7 @@ export default function About() {
                 </div>
 
                 <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:px-10 mx-auto relative">
-                        
+
                     {/* Background Glow */}
                     <div className="absolute w-[220px] sm:w-[260px] md:w-[300px] h-[220px] sm:h-[260px] md:h-[300px] bg-emerald-500/10 blur-[100px] rounded-full -top-6 sm:-top-8 md:-top-10 -right-6 sm:-right-8 md:-right-10 pointer-events-none" />
 
@@ -85,9 +86,25 @@ export default function About() {
                         <motion.div
                             whileHover={{ scale: 1.08 }}
                             transition={{ duration: 0.4 }}
+                            className="relative z-10" 
                         >
                             <Image
                                 src={image}
+                                alt="apurba"
+                                width={400}
+                                height={400}
+                                className="w-full h-[260px] sm:h-[300px] md:h-[340px] lg:h-[400px] object-cover rounded-lg sm:rounded-xl"
+                            />
+                        </motion.div>
+
+                        {/* backround image */}
+                        <motion.div 
+                            whileHover={{ scale: 1.08 }}
+                            transition={{ duration: 0.4 }}
+                            className="absolute top-2 sm:top-3 md:top-4 left-2 sm:left-3 md:left-4 inset-0  z-0"
+                        >
+                            <Image
+                                src={bg}
                                 alt="apurba"
                                 width={400}
                                 height={400}
