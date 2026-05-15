@@ -6,7 +6,16 @@ import { useRef } from "react";
 
 const timelineData = [
   {
-    id: 1,
+    id: 5,
+    date: "2026 — Present",
+    title: "Next Level AI-Driven Software Engineering Bootcamp",
+    institute: "Programming Hero",
+    icon: "solar:code-linear",
+    description:
+      "Completed full-stack web development course covering TypeScript, Next.js, Node.js, MongoDB, Docker, Nginx, Prisma, PostgreSQL, AWS and modern frontend tools.",
+  },
+  {
+    id: 4,
     date: "2025 — Present",
     title: "Industrial Attachment (Web Development)",
     institute: "TechLabs",
@@ -15,16 +24,16 @@ const timelineData = [
       "Hands-on industry training focused on real-world web development, MERN stack projects, and production-level application building.",
   },
   {
-    id: 2,
+    id: 3,
     date: "2024",
     title: "Web Development Course",
     institute: "Programming Hero",
-    icon: "solar:book-bookmark-linear",
+    icon: "solar:code-linear",
     description:
       "Completed full-stack web development course covering React, Node.js, MongoDB, and modern frontend tools.",
   },
   {
-    id: 3,
+    id: 2,
     date: "2020 — 2024",
     title: "Diploma in Computer Engineering",
     institute: "Mangrove Institute of Science & Technology",
@@ -33,7 +42,7 @@ const timelineData = [
       "Focused on core computer engineering concepts, programming fundamentals, networking, and software development.",
   },
   {
-    id: 4,
+    id: 1,
     date: "2018 — 2020",
     title: "Secondary School Certificate (SSC)",
     institute: "Kotalipara High School",
@@ -74,12 +83,12 @@ export default function EducationSection() {
       <div ref={ref} className="relative w-full max-w-5xl">
 
         {/* 🔥 Base Line */}
-        <div className=" absolute left-1/2 top-0 w-[2px] h-full bg-white/10 -translate-x-1/2" />
+        <div className=" absolute left-1/2 top-0 w-[4px] h-full bg-white/10 -translate-x-1/2" />
 
         {/* 🔥 Animated Progress Line */}
         <motion.div
           style={{ height: lineHeight }}
-          className=" absolute left-1/2 top-0 w-[2px] bg-blue-300 -translate-x-1/2"
+          className=" absolute left-1/2 top-0 w-[5px] bg-blue-500 -translate-x-1/2"
         />
 
         <div className="flex flex-col gap-24">
@@ -93,9 +102,8 @@ export default function EducationSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.2 }}
                 viewport={{ once: true }}
-                className={`relative flex ${
-                  reverse ? "md:flex-row-reverse" : "md:flex-row"
-                } items-center`}
+                className={`relative flex ${reverse ? "md:flex-row-reverse" : "md:flex-row"
+                  } items-center`}
               >
                 {/* LEFT / RIGHT CARD */}
                 <div className="w-full md:w-1/2 px-6">
@@ -108,8 +116,8 @@ export default function EducationSection() {
                     <div className="absolute inset-0 bg-white/5 blur-xl opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl" />
 
                     {/* Card */}
-                    <div className="relative bg-zinc-900/70 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-white/30 transition duration-500">
-                      
+                    <div className="relative bg-zinc-900/70 backdrop-blur-xl border border-white/60 rounded-2xl p-6 hover:border-white/30 transition duration-500">
+
                       <span className="text-xs text-emerald-400">
                         {item.date}
                       </span>

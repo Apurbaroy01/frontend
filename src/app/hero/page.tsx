@@ -1,11 +1,12 @@
-"use client";
+
 
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDribbble, FaDownload } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import image from '../../../public/apurba.jpg'
 import { CheckIcon } from "lucide-react";
 import { BorderBeam } from "@/components/ui/border-beam";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -68,16 +69,22 @@ export default function Hero() {
             <FiMail /> Contact Me
           </button>
 
-          <button className="px-5 py-2 rounded-lg border border-gray-600 hover:bg-gray-800 transition">
-            View Projects
-          </button>
+          <Link href="https://drive.google.com/file/d/1Gx6qudLXN2DNE1FC06neNcEadue32SIb/view" target="_blank" className="flex items-center gap-2 px-5 py-2 rounded-lg border border-gray-600 hover:bg-gray-800 transition">
+            <FaDownload /> Resume
+          </Link>
         </div>
 
         {/* Social Icons */}
         <div className="mt-6 flex justify-center gap-6 text-xl text-gray-400">
-          <FaGithub className="hover:text-white cursor-pointer" />
-          <FaDribbble className="hover:text-white cursor-pointer" />
-          <FaLinkedin className="hover:text-white cursor-pointer" />
+          <Link href="https://github.com/Apurbaroy01" target="_blank">
+            <FaGithub className="hover:text-white cursor-pointer" />
+          </Link>
+          <Link href="https://apurbaroy.netlify.app" target="_blank">
+            <FaDribbble className="hover:text-white cursor-pointer" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/apurba-roy01" target="_blank">
+            <FaLinkedin className="hover:text-white cursor-pointer" />
+          </Link>
         </div>
       </div>
     </section>

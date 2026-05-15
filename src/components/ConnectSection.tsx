@@ -1,12 +1,11 @@
-"use client";
 
 import Link from "next/link";
 import { Mail, Github, Linkedin, Radar } from "lucide-react";
 
 const socials = [
-  { href: "mailto:your@email.com", icon: Mail },
-  { href: "https://github.com/yourusername", icon: Github },
-  { href: "https://linkedin.com/in/yourusername", icon: Linkedin },
+  { href: "mailto:apurbaroy00011@gmail.com", icon: Mail },
+  { href: "https://github.com/Apurbaroy01", icon: Github },
+  { href: "https://linkedin.com/in/apurba-roy01", icon: Linkedin },
 ];
 
 export default function ConnectSection() {
