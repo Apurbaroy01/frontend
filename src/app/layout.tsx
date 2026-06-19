@@ -6,6 +6,7 @@ import AOSProvider from "@/components/Shared/AOSProvider";
 import Footer from "@/components/Shared/footer";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 
 
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   creator: "Apurba Roy",
 
   publisher: "Apurba Roy",
-  
+
   robots: {
     index: true,
     follow: true,
@@ -101,6 +102,7 @@ export default function RootLayout({
 
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-8Z507DKRFP" />
     </html>
   );
 }
