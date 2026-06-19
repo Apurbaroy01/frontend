@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@iconify/react": "^6.0.2",
-    "@netlify/plugin-nextjs": "^5.15.9",
+    "@netlify/plugin-nextjs": "^5.15.12",
     "@radix-ui/react-avatar": "^1.1.11",
     "@radix-ui/react-slot": "^1.2.4",
     "@splinetool/react-spline": "^4.1.0",
