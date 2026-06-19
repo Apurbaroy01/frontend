@@ -6,6 +6,7 @@ import Navbar from "@/components/Shared/Navbar";
 import AOSProvider from "@/components/Shared/AOSProvider";
 import Footer from "@/components/Shared/footer";
 import { cn } from "@/lib/utils";
+import { siteConfig } from "@/config/site";
 
 
 
@@ -20,11 +21,65 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Apurba | Portfolio",
-  description: "Apurba's Portfolio",
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  metadataBase: new URL(siteConfig.url!),
   icons: {
     icon: "/logo.png",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Apurba Roy Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ["/logo.png"],
+  },
+
+  authors: [
+    {
+      name: siteConfig.author.name,
+      url: siteConfig.author.url,
+    },
+  ],
+
+  creator: "Apurba Roy",
+
+  publisher: "Apurba Roy",
+  
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  alternates: {
+    canonical: siteConfig.url,
+  }
 };
 
 export default function RootLayout({
