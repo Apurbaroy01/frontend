@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  applicationName:"Apurba Roy",
   keywords: siteConfig.keywords,
   metadataBase: new URL(siteConfig.url!),
   icons: {
