@@ -14,15 +14,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         {
             url: `${siteConfig.url}/about`,
             lastModified: new Date(),
-            changeFrequency: "monthly",
+            changeFrequency: "weekly",
             priority: 0.8,
         },
-        {
-            url: `${siteConfig.url}/projects`,
-            lastModified: new Date(),
-            changeFrequency: "weekly",
-            priority: 0.9,
-        },
+
         {
             url: `${siteConfig.url}/connection`,
             lastModified: new Date(),
@@ -32,7 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         {
             url: `${siteConfig.url}/stack`,
             lastModified: new Date(),
-            changeFrequency: "monthly",
+            changeFrequency: "weekly",
             priority: 0.7,
         },
         
