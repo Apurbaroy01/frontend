@@ -1,136 +1,150 @@
 "use client";
 
-import { ArrowUpRight, Code2 } from "lucide-react";
-import dynamic from "next/dynamic";
+import Image from "next/image";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 
-const IconCloud = dynamic(
-    () => import("./ui/interactive-icon-cloud").then(m => m.IconCloud),
-    { ssr: false }
-);
-
-type Project = {
-    title: string;
-    category: string;
-    tech: string;
-    description: string;
-};
-
-const ICON_SLUGS = [
-    "typescript", "javascript", "dart", "java", "react", "flutter", "android",
-    "html5", "css3", "nodedotjs", "express", "nextdotjs", "prisma", "amazonaws",
-    "postgresql", "firebase", "nginx", "vercel", "testinglibrary", "jest",
-    "cypress", "docker", "git", "jira", "github", "gitlab", "visualstudiocode",
-    "androidstudio", "sonarqube", "figma",
-];
-
-const PROJECTS: Project[] = [
-    {
-        title: "Nexus Storefront",
-        category: "E-Commerce",
-        tech: "React • Node • MongoDB",
-        description: "High-performance storefront with real-time inventory sync.",
-    },
-    {
-        title: "Omni Dash",
-        category: "Data Analytics",
-        tech: "MERN • Recharts",
-        description: "Advanced analytics dashboard with MongoDB aggregation.",
-    },
-];
 
 export default function ProjectsSection() {
-    return (
-        <section className="w-full max-w-6xl mx-auto px-6 py-16 flex flex-col gap-12">
-            <Header />
 
-            <div className="grid md:grid-cols-2 gap-8">
-                {PROJECTS.map((project, i) => (
-                    <ProjectCard key={i} {...project} />
+    const projects = [
+        {
+            id: 1,
+            title: "Gitvn Shop",
+            description:
+                "A modern eCommerce platform with secure authentication, product management, shopping cart, and online order processing.",
+            category: "E-Commerce",
+            image: "https://i.ibb.co.com/0RjfnzGw/Screenshot-2026-07-18-223956.png",
+            link: "https://gitvnshop.com",
+            createdAt: "2026-07-10",
+            languages: ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+            accent: "from-cyan-500 via-sky-500 to-blue-500",
+        },
+        {
+            id: 2,
+            title: "Doctor Appointment",
+            description:
+                "Online doctor appointment booking system with patient, doctor, and admin dashboards.",
+            category: "Healthcare",
+            image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&q=80",
+            link: "https://example.com",
+            createdAt: "2026-06-18",
+            languages: ["Next.js", "Express.js", "MongoDB"],
+            accent: "from-emerald-500 via-teal-500 to-cyan-500",
+        },
+        {
+            id: 3,
+            title: "IT Company Portfolio",
+            description:
+                "Professional company website showcasing services, projects, blogs, and contact information.",
+            category: "Portfolio",
+            image: "https://i.ibb.co.com/dsL2Jk63/Screenshot-2026-07-18-225008.png",
+            link: "https://airtechit.com.bd",
+            createdAt: "2026-05-25",
+            languages: ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+            accent: "from-violet-500 via-fuchsia-500 to-pink-500",
+        },
+        
+    ];
+
+    return (
+        <div className="w-full max-w-6xl mx-auto px-6 py-5 text-white relative">
+            <div className="mb-12 text-center">
+                <h2 className="text-3xl font-semibold">Active Deployments</h2>
+                <p className="text-sm text-zinc-400">Recent systems engineered and shipped to production.</p>
+            </div>
+            <div className="mt-10 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+                {projects.map((project) => (
+                    <article
+                        key={project.id}
+                        className="group overflow-hidden rounded-lg border  bg-white/[0.04] transition hover:-translate-y-1 border-cyan-300 shadow-2xl shadow-cyan-300/10 hover:border-cyan-300/40   backdrop-blur-md group-hover:bg-white/5"
+                    >
+                        <div className="relative h-64 overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+                            {/* Top Gradient */}
+                            <div
+                                className={`absolute inset-x-0 top-0 z-20 h-1 bg-gradient-to-r ${project.accent}`}
+                            />
+
+                            {/* Image */}
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                fill
+                                className="object-cover transition duration-500 group-hover:scale-105"
+                            />
+
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/10" />
+
+                            {/* Top Bar */}
+                            <div className="absolute left-4 right-4 top-4 z-20 flex items-center justify-between">
+                                <div className="flex gap-1.5">
+                                    <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
+                                    <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
+                                    <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                                </div>
+
+                                <span className="rounded-full bg-black/40 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-white backdrop-blur-md">
+                                    Live App
+                                </span>
+                            </div>
+
+                            {/* Languages on Image */}
+                            <div className="absolute bottom-2 left-2 right-2 z-20 flex flex-wrap gap-1">
+                                {project.languages?.map((lang) => (
+                                    <span
+                                        key={lang}
+                                        className="rounded-full border border-white/20 bg-white/10 px-2 py-1 text-[10px] font-medium text-white backdrop-blur-md"
+                                    >
+                                        {lang}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="p-2">
+                            <div className="flex items-center justify-between">
+                                <span className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-cyan-300">
+                                    {project?.category}
+                                </span>
+
+                                <span className="text-[10px] text-slate-200">
+                                    {new Intl.DateTimeFormat("en-US", {
+                                        month: "short",
+                                        year: "numeric",
+                                    }).format(new Date(project.createdAt))}
+                                </span>
+                            </div>
+
+                            <h3 className="p-1 line-clamp-1 text-lg md:text-xl font-bold text-white transition group-hover:text-cyan-300">
+                                {project?.title}
+                            </h3>
+
+                            <p className=" text-xs leading-5 text-slate-300">
+                                {project?.description}
+                            </p>
+
+                            {/* Footer - Always Bottom */}
+                            <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-2">
+                                <Link
+                                    href={project.link}
+                                    target="_blank"
+                                    className="inline-flex items-center gap-1 rounded-xl bg-cyan-500/10 px-2 py-2 text-xs font-semibold text-cyan-300 transition hover:bg-cyan-500/20 hover:text-cyan-200"
+                                >
+                                    View Live
+                                    <FiArrowUpRight className="h-4 w-4" />
+                                </Link>
+
+                                <div className="flex items-center gap-2 text-xs text-slate-200">
+                                    <div className="h-2 w-2 rounded-full bg-emerald-500" />
+                                    Active
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 ))}
             </div>
-        </section>
-    );
-}
-
-function Header() {
-    return (
-        <div className="text-center">
-            <h2 className="text-3xl font-semibold text-white">
-                Active Deployments
-            </h2>
-            <p className="text-sm text-zinc-400">
-                Recent systems engineered and shipped to production.
-            </p>
-        </div>
-    );
-}
-
-function ProjectCard({ title, category, tech, description }: Project) {
-    return (
-        <div className="relative rounded-2xl p-[1px] bg-gradient-to-b from-white/10 to-white/0  overflow-hidden">
-
-            <div className="absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_top,rgba(0,255,200,0.15),transparent_70%)] pointer-events-none" />
-
-            <div className="relative rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 p-5 h-full flex flex-col gap-5">
-
-                <CardImage />
-                <CardContent title={title} category={category} tech={tech} description={description} />
-                <CardActions />
-
-            </div>
-        </div>
-    );
-}
-
-function CardImage() {
-    return (
-        <div className="relative aspect-video rounded-xl overflow-visible border border-white/10 bg-gradient-to-br from-zinc-900 to-black flex items-center justify-center">
-
-            {/* Base Icon */}
-            <Code2 className="text-zinc-600 z-10" size={40} />
-
-            {/* Overlay */}
-            <div className="absolute -top-30 -right-20  flex items-center justify-center opacity-100 overflow-visible">
-                <div className="w-[60%] h-[60%]">
-                    <IconCloud iconSlugs={ICON_SLUGS} />
-                </div>
-            </div>
 
         </div>
-    );
-}
-
-function CardContent({ title, category, tech, description }: Project) {
-    return (
-        <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2 text-xs text-zinc-400">
-                <span className="px-2 py-1 rounded-md bg-white/10 border border-white/10">
-                    {category}
-                </span>
-                <span className="text-zinc-500">{tech}</span>
-            </div>
-
-            <h3 className="text-lg font-semibold text-white">{title}</h3>
-
-            <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3">
-                {description}
-            </p>
-        </div>
-    );
-}
-
-function CardActions() {
-    return (
-        <div className="flex items-center justify-between mt-auto pt-3 border-t border-white/10">
-
-            <button className="flex items-center gap-2 text-sm text-teal-400 hover:text-teal-300 transition">
-                View Live <ArrowUpRight size={16} />
-            </button>
-
-            <button className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition">
-                <Code2 size={16} /> Code
-            </button>
-
-        </div>
-    );
+    )
 }
