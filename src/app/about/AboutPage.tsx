@@ -89,10 +89,10 @@ export default function AboutPage() {
                             className="relative z-10" 
                         >
                             <Image
-                                src={image}
+                                src="/me.jpg"
                                 alt="apurba"
-                                width={400}
-                                height={400}
+                                width={500}
+                                height={500}
                                 className="w-full h-[260px] sm:h-[300px] md:h-[340px] lg:h-[400px] object-cover rounded-lg sm:rounded-xl"
                             />
                         </motion.div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
                         {/* Badge */}
                         <div className="absolute top-2 sm:top-3 md:top-4 left-2 sm:left-3 md:left-4 z-20 flex items-center gap-1.5 sm:gap-2 bg-black/60 backdrop-blur-md border border-white/10 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs text-white">
                             <Icon icon="solar:code-linear" className="text-xs sm:text-sm" />
-                            MERN Developer
+                            Full Stack Software Engineer ( MERN )
                         </div>
 
                         {/* Card Content */}

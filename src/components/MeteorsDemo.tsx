@@ -30,13 +30,14 @@ export function MeteorsDemo() {
 
                     <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
                         I’m <span className="text-white font-medium">Apurba Roy</span>, a
-                         MERN stack developer focused on building scalable,
-                         high-performance web applications with clean architecture and modern UI.
+                        Full Stack Software Engineer ( MERN ) Building scalable web applications from Design to Deployment.
                     </p>
 
-                    <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-                        I design scalable systems, optimizing MongoDB performance and crafting
-                         smooth React interfaces with clean architecture.
+                    <p className="font-normal text-base text-slate-500  relative z-50">
+                        I build scalable and secure full-stack applications with the MERN stack,
+                        specializing in React, Next.js, Node.js, and MongoDB while focusing on
+                        performance optimization, clean architecture, and intuitive user experiences
+                        that are built to grow with business needs.
                     </p>
 
                     {/* Meaty part - Meteor effect */}
