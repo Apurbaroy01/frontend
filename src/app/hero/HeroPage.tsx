@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaDribbble, FaDownload } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import image from '../../../public/apurba.jpg'
-import { CheckIcon } from "lucide-react";
+import { BadgeCheck, CheckIcon } from "lucide-react";
 import { BorderBeam } from "@/components/ui/border-beam";
 import Link from "next/link";
 
@@ -29,7 +28,7 @@ export default function HeroPage() {
 
             {/* Image */}
             <Image
-              src={image}
+              src="/mee.jpeg"
               alt="apurba"
               fill
               className="rounded-full object-cover border-2 border-gray-700 shadow-lg p-1"
@@ -38,8 +37,11 @@ export default function HeroPage() {
             />
 
             {/* Verified badge */}
-            <span className="absolute right-1 bottom-1 flex h-8 w-8 items-center justify-center rounded-full bg-teal-500 border-2 border-black">
-              <CheckIcon className="h-3 w-3 text-white" />
+            <span className="absolute right-1 bottom-1 flex h-8 w-8 items-center justify-center ">
+              <BadgeCheck
+                className="h-7 w-7 fill-[#1877F2] text-white drop-shadow-[0_0_4px_rgba(24,119,242,0.5)]"
+                strokeWidth={1.5}
+              />
             </span>
 
           </div>
@@ -52,15 +54,14 @@ export default function HeroPage() {
           <br />
           A{" "}
           <span className="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
-            Software Developer
+            Full Stack Software Engineer
           </span>
         </h1>
 
         {/* Description */}
         <p className="mt-6 text-gray-300 max-w-2xl mx-auto">
-          A fullstack developer with solid foundations in design, passionate
-          about crafting seamless user experiences. I thrive at the intersection
-          of creativity and functionality.
+          I build fast, scalable, and secure web applications using the MERN stack,
+          delivering clean architecture and seamless user experiences.
         </p>
 
         {/* Buttons */}

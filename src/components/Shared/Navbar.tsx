@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { FiAlignRight } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
-import image from '../../../public/apurba.jpg'
 import Image from "next/image";
 
 const Navbar = () => {
@@ -18,11 +17,11 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-xs font-semibold tracking-tighter">
-                        <Image className="rounded-full" src={image} alt="apurba" width={80} height={80} />
+                        <Image className="rounded-full" src="/logo.png" alt="apurba" width={80} height={80} />
                     </div>
 
-                    <span className="text-white font-medium tracking-tight text-sm ">
-                        Apurba Roy
+                    <span className="text-white font-medium tracking-tight text-sm">
+                        Dev Apurba
                     </span>
                 </div>
 

@@ -3,7 +3,6 @@
 import { MeteorsDemo } from "@/components/MeteorsDemo";
 import Image from "next/image";
 import { FiClock, FiFolder } from "react-icons/fi";
-import image from '../../../public/apurbaa.png'
 import bg from '../../../public/bg.png'
 import { BorderBeam } from "@/components/ui/border-beam";
 import { motion } from "framer-motion";
@@ -89,11 +88,11 @@ export default function AboutPage() {
                             className="relative z-10" 
                         >
                             <Image
-                                src="/me.jpg"
+                                src="/mee.jpeg"
                                 alt="apurba"
                                 width={500}
                                 height={500}
-                                className="w-full h-[260px] sm:h-[300px] md:h-[340px] lg:h-[400px] object-cover rounded-lg sm:rounded-xl"
+                                className="w-full h-[300px] sm:h-[340px] md:h-[360px] lg:h-[400px] object-cover rounded-lg sm:rounded-xl"
                             />
                         </motion.div>
 
@@ -108,7 +107,7 @@ export default function AboutPage() {
                                 alt="apurba"
                                 width={400}
                                 height={400}
-                                className="w-full h-[260px] sm:h-[300px] md:h-[340px] lg:h-[400px] object-cover rounded-lg sm:rounded-xl"
+                                className="w-full h-[300px] sm:h-[340px] md:h-[360px] lg:h-[400px] object-cover rounded-lg sm:rounded-xl"
                             />
                         </motion.div>
 
