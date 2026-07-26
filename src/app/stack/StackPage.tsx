@@ -290,33 +290,43 @@ export default function StackPage() {
             </div>
 
             {/* Tabs */}
-            <div className="flex justify-center mb-12">
-                <div className="flex flex-wrap justify-center gap-3 p-2 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10">
-                    {tabs.map((tab) => (
-                        <button
-                            key={tab}
-                            onClick={() => setActiveTab(tab)}
-                            className={`relative px-5 py-2 text-sm font-medium capitalize rounded-xl transition-all duration-300
-                                ${activeTab === tab
-                                    ? "text-black bg-white shadow-md"
-                                    : "text-zinc-400 hover:text-white hover:bg-white/10"
-                                }`}
-                        >
-                            {tab}
+            <div className="mb-10 flex justify-center">
+                <div className="relative rounded-md border border-white/10 bg-white/5 p-1.5 backdrop-blur-md shadow-md w-full">
+                    {/* Background Glow */}
+                    <div className="absolute inset-0 rounded-md bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 blur-md" />
 
-                            {/* Active glow effect */}
-                            {activeTab === tab && (
-                                <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/20 to-cyan-500/20 blur-md -z-10"></span>
-                            )}
-                        </button>
-                    ))}
+                    <div className="relative flex flex-wrap items-center justify-center gap-1">
+                        {tabs.map((tab) => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab)}
+                                className={`group relative overflow-hidden rounded-md px-2 py-2 text-xs font-semibold tracking-wide transition-all duration-300 ${activeTab === tab
+                                        ? "bg-white text-black shadow-lg"
+                                        : "text-zinc-400 hover:text-white"
+                                    }`}
+                            >
+                                {/* Hover Gradient */}
+                                <span className="absolute inset-0 rounded-xl bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                                {/* Active Glow */}
+                                {activeTab === tab && (
+                                    <>
+                                        <span className="absolute inset-0 rounded-xl border border-white/40" />
+                                        <span className="absolute -inset-1 rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 opacity-30 blur-lg" />
+                                    </>
+                                )}
+
+                                <span className="relative z-10 capitalize">{tab}</span>
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
 
             {/* Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {filteredStack.map((item, i) => (
-                    
+
                     <div key={i}
                         className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
                     >
