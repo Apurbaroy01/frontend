@@ -70,7 +70,7 @@ export default function HeroPage() {
             <FiMail /> Contact Me
           </button>
 
-          <Link href="https://drive.google.com/file/d/1Gx6qudLXN2DNE1FC06neNcEadue32SIb/view" target="_blank" className="flex items-center gap-2 px-5 py-2 rounded-lg border border-gray-600 hover:bg-gray-800 transition">
+          <Link href="https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?usp=sharing" target="_blank" className="flex items-center gap-2 px-5 py-2 rounded-lg border border-gray-600 hover:bg-gray-800 transition">
             <FaDownload /> Resume
           </Link>
         </div>
