@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="bg-zinc-900/40 backdrop-blur-md border border-white/10 rounded-full pl-6 pr-2 py-2 flex items-center justify-between shadow-[0_8px_32px_-8px_rgba(0,0,0,0.8)]">
 
                 {/* Logo */}
-                <div className="flex items-center gap-3">
+                <Link href="/" className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-xs font-semibold tracking-tighter">
                         <Image className="rounded-full" src="/logo.png" alt="apurba" width={80} height={80} />
                     </div>
@@ -23,29 +23,29 @@ const Navbar = () => {
                     <span className="text-white font-medium tracking-tight text-sm">
                         Dev Apurba
                     </span>
-                </div>
+                </Link>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-1 bg-white/5 border border-white/5 rounded-full p-1 shadow-inner">
                     <Link
-                        href="#stack"
+                        href="/stack"
                         className="hover:text-white hover:bg-white/10 transition-all duration-300 text-xs font-medium text-zinc-400 rounded-full px-5 py-1.5"
                     >
                         Stack
                     </Link>
 
                     <Link
-                        href="#work"
+                        href="/work"
                         className="hover:text-white hover:bg-white/10 transition-all duration-300 text-xs font-medium text-zinc-400 rounded-full px-5 py-1.5"
                     >
                         Deployments
                     </Link>
 
                     <Link
-                        href="#connect"
+                        href="/about"
                         className="hover:text-white hover:bg-white/10 transition-all duration-300 text-xs font-medium text-zinc-400 rounded-full px-5 py-1.5"
                     >
-                        Connect
+                        About
                     </Link>
                 </div>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <div data-aos="fade-left" className=" mt-3 md:hidden bg-zinc-900/40 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-xl">
                     <div className="flex flex-col gap-2 text-sm">
                         <Link
-                            href="#stack"
+                            href="/stack"
                             onClick={() => setOpen(false)}
                             className="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/10 hover:text-white transition"
                         >
@@ -76,7 +76,7 @@ const Navbar = () => {
                         </Link>
 
                         <Link
-                            href="#work"
+                            href="/work"
                             onClick={() => setOpen(false)}
                             className="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/10 hover:text-white transition"
                         >
@@ -84,11 +84,11 @@ const Navbar = () => {
                         </Link>
 
                         <Link
-                            href="#connect"
+                            href="/about"
                             onClick={() => setOpen(false)}
                             className="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/10 hover:text-white transition"
                         >
-                            Connect
+                            About
                         </Link>
 
                         <button className="mt-2 flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-lg text-xs font-semibold hover:bg-zinc-200 transition">

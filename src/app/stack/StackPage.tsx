@@ -324,20 +324,22 @@ export default function StackPage() {
             </div>
 
             {/* Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                 {filteredStack.map((item, i) => (
 
                     <div key={i}
-                        className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
+                        data-aos="fade-up"
+                        data-aos-delay={i * 100}
+                        className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
                     >
-                        <div className="flex flex-col gap-4">
-                            <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 border border-white/20 group-hover:scale-110 transition">
+                        <div className="flex flex-col gap-4 w-full justify-center items-center">
+                            <div className="w-12 h-12 flex items-center justify-center  rounded-lg bg-white/10 border border-white/20 group-hover:scale-110 transition">
                                 {item.icon}
                             </div>
 
-                            <div>
-                                <h3 className="font-medium">{item.name}</h3>
-                                <p className="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            <div className="text-center">
+                                <h3 className="font-medium text-sm md:text-base">{item.name}</h3>
+                                <p className="text-[10px] md:text-xs text-zinc-400 mt-1 leading-relaxed">
                                     {item.desc}
                                 </p>
                             </div>

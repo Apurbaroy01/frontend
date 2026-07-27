@@ -1,12 +1,12 @@
 import DatabaseWithRestApi from "@/components/ui/database-with-rest-api";
 import About from "./about/page";
 import Stack from "./stack/page";
-import ProjectsSection from "@/components/ProjectCard";
 import Educations from "./education/page";
 import Hero from "./hero/page";
 import Connection from "./connection/page";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import WorkPage from "./work/page";
 
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function Home() {
       <About />
       <DatabaseWithRestApi />
       <Stack />
-      <ProjectsSection />
+      <WorkPage />
       <Educations />
       <Connection />
     </div>

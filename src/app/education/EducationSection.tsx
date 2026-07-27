@@ -104,6 +104,7 @@ export default function EducationSection() {
                 viewport={{ once: true }}
                 className={`relative flex ${reverse ? "md:flex-row-reverse" : "md:flex-row"
                   } items-center`}
+
               >
                 {/* LEFT / RIGHT CARD */}
                 <div className="w-full md:w-1/2 px-6">

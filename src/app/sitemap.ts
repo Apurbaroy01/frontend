@@ -19,7 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
 
         {
-            url: `${siteConfig.url}/connection`,
+            url: `${siteConfig.url}/work`,
             lastModified: new Date(),
             changeFrequency: "weekly",
             priority: 0.8,
