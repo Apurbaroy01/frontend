@@ -1,13 +1,14 @@
 
 export const siteConfig = {
-    name: "Apurba Roy | MERN Stack Developer & Full Stack Web Developer",
+    name: "Dev Apurba Roy | Full Stack Software Engineer (MERN)",
 
-    description: "Apurba Roy is a MERN Stack Developer specializing in React.js, Next.js, Node.js, Express.js, MongoDB, and modern web applications. Explore projects, skills, services, and professional experience.",
+    description: "Apurba Roy is a Full Stack Software Engineer and MERN Stack Developer specializing in React.js, Next.js, Node.js, Express.js, MongoDB, Tailwind CSS, and modern web development. View portfolio, featured projects, technical skills, services, and experience.",
 
     url: process.env.NEXT_PUBLIC_LIVE_URL,
 
     keywords: [
         "Apurba Roy",
+        "Dev Apurba Roy",
         "Apurba Roy Portfolio",
         "MERN Stack Developer",
         "Full Stack Developer",
@@ -23,7 +24,12 @@ export const siteConfig = {
         "Freelance Web Developer",
         "Portfolio Website",
         "Bangladesh Developer",
-        "TechLabsBD",
+        "MERN Stack",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
         "Tailwind CSS",
         "TypeScript",
         "REST API Development",
@@ -36,8 +42,8 @@ export const siteConfig = {
     },
 
     links: {
-    github: "https://github.com/Apurbaroy01",
-    linkedin: "https://www.linkedin.com/in/apurba-roy01",
-    facebook: "https://www.facebook.com/Apurbaroy01",
-  },
+        github: "https://github.com/Apurbaroy01",
+        linkedin: "https://www.linkedin.com/in/apurba-roy01",
+        facebook: "https://www.facebook.com/Apurbaroy01",
+    },
 };
