@@ -20,30 +20,7 @@ export default function ProjectsSection() {
             languages: ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
             accent: "from-cyan-500 via-sky-500 to-blue-500",
         },
-        {
-            id: 2,
-            title: "Doctor Appointment",
-            description:
-                "Online doctor appointment booking system with patient, doctor, and admin dashboards.",
-            category: "Healthcare",
-            image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&q=80",
-            link: "https://example.com",
-            createdAt: "2026-06-18",
-            languages: ["Next.js", "Express.js", "MongoDB"],
-            accent: "from-emerald-500 via-teal-500 to-cyan-500",
-        },
-        {
-            id: 3,
-            title: "IT Company Portfolio",
-            description:
-                "Professional company website showcasing services, projects, blogs, and contact information.",
-            category: "Portfolio",
-            image: "https://i.ibb.co.com/dsL2Jk63/Screenshot-2026-07-18-225008.png",
-            link: "https://www.airtech.com.bd/",
-            createdAt: "2026-05-25",
-            languages: ["Next.js", "JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
-            accent: "from-violet-500 via-fuchsia-500 to-pink-500",
-        },
+        
         
     ];
 

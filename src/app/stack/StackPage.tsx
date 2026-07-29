@@ -329,7 +329,7 @@ export default function StackPage() {
 
                     <div key={i}
                         data-aos="fade-up"
-                        data-aos-delay={i * 100}
+                        data-aos-delay={i * 20}
                         className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
                     >
                         <div className="flex flex-col gap-4 w-full justify-center items-center">
