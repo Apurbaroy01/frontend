@@ -1,6 +1,8 @@
 "use client";
 
+import { ShieldCheck } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import {
     SiMongodb,
     SiExpress,
@@ -35,32 +37,19 @@ import {
     SiReactquery,
     SiReactrouter,
     SiVsco,
+    SiHeroui,
+    SiPostgresql,
+    SiPrisma,
+    SiSupabase,
 } from "react-icons/si";
 
 const stack = [
-    {
-        name: "MongoDB",
-        icon: <SiMongodb className="text-emerald-400" size={24} />,
-        desc: "NoSQL database with aggregation pipelines",
-        category: "backend",
-    },
-    {
-        name: "Express.js",
-        icon: <SiExpress size={24} />,
-        desc: "Backend API & middleware architecture",
-        category: "backend",
-    },
+    // ==================== FRONTEND ====================
     {
         name: "React",
         icon: <SiReact className="text-cyan-400" size={24} />,
         desc: "Dynamic component-based UI",
         category: "frontend",
-    },
-    {
-        name: "Node.js",
-        icon: <SiNodedotjs className="text-green-400" size={24} />,
-        desc: "Event-driven backend runtime",
-        category: "backend",
     },
     {
         name: "Next.js",
@@ -70,9 +59,9 @@ const stack = [
     },
     {
         name: "TypeScript",
-        icon: <SiTypescript className="text-blue-400" size={24} />,
-        desc: "Strongly typed JavaScript",
-        category: "backend",
+        icon: <SiTypescript className="text-blue-500" size={24} />,
+        desc: "Type-safe JavaScript development",
+        category: "frontend",
     },
     {
         name: "JavaScript",
@@ -81,138 +70,10 @@ const stack = [
         category: "frontend",
     },
     {
-        name: "Redis",
-        icon: <SiRedis className="text-red-400" size={24} />,
-        desc: "In-memory caching & queue system",
-        category: "backend",
-    },
-    {
-        name: "Docker",
-        icon: <SiDocker className="text-blue-300" size={24} />,
-        desc: "Containerization for consistent deployment",
-        category: "backend",
-    },
-    {
-        name: "Docker Compose",
-        icon: <SiDocker className="text-blue-500" size={24} />,
-        desc: "Multi-container orchestration",
-        category: "backend",
-    },
-    {
-        name: "Nginx",
-        icon: <SiNginx className="text-green-500" size={24} />,
-        desc: "Reverse proxy & load balancing",
-        category: "backend",
-    },
-    {
-        name: "VPS Server",
-        icon: <SiLinux size={24} className="text-gray-300" />,
-        desc: "Self-managed virtual private server deployment",
-        category: "backend",
-    },
-    {
-        name: "CloudPanel",
-        icon: <SiCpanel size={24} className="text-indigo-400" />,
-        desc: "Server control panel for managing web apps",
-        category: "backend",
-    },
-    {
-        name: "Linux",
-        icon: <SiLinux size={24} className="text-yellow-400" />,
-        desc: "Operating system for servers and development",
-        category: "backend",
-    },
-    {
-        name: "Git",
-        icon: <SiGit size={24} className="text-orange-400" />,
-        desc: "Version control system",
-        category: "backend",
-    },
-    {
-        name: "GitHub",
-        icon: <SiGithub size={24} />,
-        desc: "Code hosting & collaboration platform",
-        category: "backend",
-    },
-    {
-        name: "Firebase",
-        icon: <SiFirebase size={24} className="text-yellow-400" />,
-        desc: "Backend services & hosting platform",
-        category: "backend",
-    },
-    {
-        name: "Postman",
-        icon: <SiPostman size={24} className="text-orange-500" />,
-        desc: "API testing and debugging tool",
-        category: "tools",
-    },
-    {
-        name: "VS Code",
-        icon: <SiVsco size={24} className="text-blue-400" />,
-        desc: "Code editor for development",
-        category: "tools",
-
-    },
-    {
-        name: "NPM",
-        icon: <SiNpm size={24} className="text-red-500" />,
-        desc: "Package manager for JavaScript",
-        category: "tools",
-    },
-    {
-        name: "Socket.io",
-        icon: <SiSocketdotio size={24} />,
-        desc: "Real-time communication",
-        category: "backend",
-    },
-    {
-        name: "REST API",
-        icon: <SiFastapi size={24} className="text-green-400" />,
-        desc: "RESTful API architecture",
-        category: "backend",
-
-    },
-    {
-        name: "JSON",
-        icon: <SiJson size={24} className="text-yellow-300" />,
-        desc: "Data format for APIs",
-        category: "backend",
-    },
-    {
-        name: "JWT Auth",
-        icon: <SiJsonwebtokens size={24} className="text-pink-400" />,
-        desc: "Token-based authentication",
-        category: "backend",
-    },
-    {
-        name: "OAuth",
-        icon: <SiAuth0 size={24} className="text-orange-400" />,
-        desc: "Third-party authentication system",
-        category: "backend",
-    },
-    {
-        name: "Firebase Auth",
-        icon: <SiFirebase size={24} className="text-yellow-500" />,
-        desc: "Authentication with Firebase",
-        category: "backend",
-    },
-    {
-        name: "Hostinger VPS",
-        icon: <SiHostinger size={24} className="text-purple-400" />,
-        desc: "Cloud VPS hosting platform",
-        category: "backend",
-    },
-    {
-        name: "Vercel",
-        icon: <SiVercel size={24} />,
-        desc: "Frontend deployment platform",
-        category: "backend",
-    },
-    {
-        name: "Netlify",
-        icon: <SiNetlify size={24} className="text-cyan-400" />,
-        desc: "Static site hosting & CI/CD",
-        category: "backend",
+        name: "Hero UI",
+        icon: <SiHeroui className="text-purple-500" size={24} />,
+        desc: "Modern React UI components",
+        category: "frontend",
     },
     {
         name: "React Router",
@@ -261,10 +122,204 @@ const stack = [
         icon: <SiCss size={24} className="text-blue-400" />,
         desc: "Styling language for web",
         category: "frontend",
-    }
+    },
+
+    // ==================== BACKEND ====================
+    {
+        name: "Node.js",
+        icon: <SiNodedotjs className="text-green-400" size={24} />,
+        desc: "Event-driven backend runtime",
+        category: "backend",
+    },
+    {
+        name: "Express.js",
+        icon: <SiExpress size={24} />,
+        desc: "Backend API & middleware architecture",
+        category: "backend",
+    },
+    {
+        name: "TypeScript",
+        icon: <SiTypescript className="text-blue-400" size={24} />,
+        desc: "Strongly typed JavaScript",
+        category: "backend",
+    },
+    {
+        name: "Mongoose",
+        icon: <SiMongodb className="text-green-600" size={24} />,
+        desc: "Elegant MongoDB object modeling",
+        category: "backend",
+    },
+    {
+        name: "Prisma",
+        icon: <SiPrisma className="text-gray-200" size={24} />,
+        desc: "Type-safe database ORM",
+        category: "backend",
+    },
+    {
+        name: "Better Auth",
+        icon: <ShieldCheck className="text-green-500" size={24} />,
+        desc: "Secure authentication for web apps",
+        category: "backend",
+    },
+    {
+        name: "JWT Auth",
+        icon: <SiJsonwebtokens size={24} className="text-pink-400" />,
+        desc: "Token-based authentication",
+        category: "backend",
+    },
+    {
+        name: "OAuth",
+        icon: <SiAuth0 size={24} className="text-orange-400" />,
+        desc: "Third-party authentication system",
+        category: "backend",
+    },
+    {
+        name: "Firebase Auth",
+        icon: <SiFirebase size={24} className="text-yellow-500" />,
+        desc: "Authentication with Firebase",
+        category: "backend",
+    },
+    {
+        name: "Socket.io",
+        icon: <SiSocketdotio size={24} />,
+        desc: "Real-time communication",
+        category: "backend",
+    },
+    {
+        name: "REST API",
+        icon: <SiFastapi size={24} className="text-green-400" />,
+        desc: "RESTful API architecture",
+        category: "backend",
+    },
+    {
+        name: "JSON",
+        icon: <SiJson size={24} className="text-yellow-300" />,
+        desc: "Data format for APIs",
+        category: "backend",
+    },
+    {
+        name: "Docker",
+        icon: <SiDocker className="text-blue-300" size={24} />,
+        desc: "Containerization for consistent deployment",
+        category: "backend",
+    },
+    {
+        name: "Docker Compose",
+        icon: <SiDocker className="text-blue-500" size={24} />,
+        desc: "Multi-container orchestration",
+        category: "backend",
+    },
+    {
+        name: "Nginx",
+        icon: <SiNginx className="text-green-500" size={24} />,
+        desc: "Reverse proxy & load balancing",
+        category: "backend",
+    },
+    {
+        name: "VPS Server",
+        icon: <SiLinux size={24} className="text-gray-300" />,
+        desc: "Self-managed virtual private server deployment",
+        category: "backend",
+    },
+    {
+        name: "Hostinger VPS",
+        icon: <SiHostinger size={24} className="text-purple-400" />,
+        desc: "Cloud VPS hosting platform",
+        category: "backend",
+    },
+    {
+        name: "Vercel",
+        icon: <SiVercel size={24} />,
+        desc: "Frontend deployment platform",
+        category: "backend",
+    },
+    {
+        name: "Netlify",
+        icon: <SiNetlify size={24} className="text-cyan-400" />,
+        desc: "Static site hosting & CI/CD",
+        category: "backend",
+    },
+    {
+        name: "Firebase",
+        icon: <SiFirebase size={24} className="text-yellow-400" />,
+        desc: "Backend services & hosting platform",
+        category: "backend",
+    },
+
+    // ==================== DATABASE ====================
+    {
+        name: "PostgreSQL",
+        icon: <SiPostgresql className="text-sky-600" size={24} />,
+        desc: "Powerful relational database",
+        category: "database",
+    },
+    {
+        name: "Supabase",
+        icon: <SiSupabase className="text-green-500" size={24} />,
+        desc: "PostgreSQL database with additional features",
+        category: "database",
+    },
+
+    {
+        name: "MongoDB",
+        icon: <SiMongodb className="text-emerald-400" size={24} />,
+        desc: "NoSQL database with aggregation pipelines",
+        category: "database",
+    },
+    {
+        name: "Redis ",
+        icon: <SiRedis className="text-red-400" size={24} />,
+        desc: "In-memory caching & queue system",
+        category: "database",
+    },
+
+
+    // ==================== TOOLS ====================
+    {
+        name: "Linux",
+        icon: <SiLinux size={24} className="text-yellow-400" />,
+        desc: "Operating system for servers and development",
+        category: "tools",
+    },
+    {
+        name: "CloudPanel",
+        icon: <SiCpanel size={24} className="text-indigo-400" />,
+        desc: "Server control panel for managing web apps",
+        category: "tools",
+    },
+    {
+        name: "Git",
+        icon: <SiGit size={24} className="text-orange-400" />,
+        desc: "Version control system",
+        category: "tools",
+    },
+    {
+        name: "GitHub",
+        icon: <SiGithub size={24} />,
+        desc: "Code hosting & collaboration platform",
+        category: "tools",
+    },
+    {
+        name: "Postman",
+        icon: <SiPostman size={24} className="text-orange-500" />,
+        desc: "API testing and debugging tool",
+        category: "tools",
+    },
+    {
+        name: "VS Code",
+        icon: <SiVsco size={24} className="text-blue-400" />,
+        desc: "Code editor for development",
+        category: "tools",
+    },
+    {
+        name: "NPM",
+        icon: <SiNpm size={24} className="text-red-500" />,
+        desc: "Package manager for JavaScript",
+        category: "tools",
+    },
 ];
 
-const tabs = ["all", "frontend", "backend", "devops", "tools"];
+const tabs = ["all", "frontend", "backend", "database", "tools"];
 
 export default function StackPage() {
 
@@ -282,16 +337,27 @@ export default function StackPage() {
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 via-cyan-500/10 to-green-500/10 blur-3xl"></div>
 
             {/* Heading */}
-            <div className="mb-12 text-center">
+            <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.5 }}
+                className="mb-12 text-center"
+            >
                 <h2 className="text-3xl font-semibold">Core Infrastructure</h2>
                 <p className="text-sm text-zinc-400">
                     Technologies I use to build scalable production systems.
                 </p>
-            </div>
+            </motion.div>
 
             {/* Tabs */}
             <div className="mb-10 flex justify-center">
-                <div className="relative rounded-md border border-white/10 bg-white/5 p-1.5 backdrop-blur-md shadow-md w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.5 }}
+                    className="relative rounded-md border border-white/10 bg-white/5 p-1.5 backdrop-blur-md shadow-md w-full">
                     {/* Background Glow */}
                     <div className="absolute inset-0 rounded-md bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10 blur-md" />
 
@@ -301,8 +367,8 @@ export default function StackPage() {
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`group relative overflow-hidden rounded-md px-2 py-2 text-xs font-semibold tracking-wide transition-all duration-300 ${activeTab === tab
-                                        ? "bg-white text-black shadow-lg"
-                                        : "text-zinc-400 hover:text-white"
+                                    ? "bg-white text-black shadow-lg"
+                                    : "text-zinc-400 hover:text-white"
                                     }`}
                             >
                                 {/* Hover Gradient */}
@@ -320,20 +386,24 @@ export default function StackPage() {
                             </button>
                         ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             {/* Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
                 {filteredStack.map((item, i) => (
 
-                    <div key={i}
-                        data-aos="fade-up"
-                        data-aos-delay={i * 20}
-                        className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-500"
+                    <motion.div
+                        key={`${item.name}-${i}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: 0.3, delay: (i % 8) * 0.04 }}
+                        whileHover={{ scale: 1.05, y: -3 }}
+                        className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
                     >
                         <div className="flex flex-col gap-4 w-full justify-center items-center">
-                            <div className="w-12 h-12 flex items-center justify-center  rounded-lg bg-white/10 border border-white/20 group-hover:scale-110 transition">
+                            <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 border border-white/20 group-hover:scale-110 transition duration-300">
                                 {item.icon}
                             </div>
 
@@ -344,7 +414,7 @@ export default function StackPage() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>
