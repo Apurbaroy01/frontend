@@ -10,7 +10,7 @@ const socials = [
 
 export default function ConnectSection() {
   return (
-    <section className="w-full mt-5 pt-10 border-t border-white/5 flex flex-col items-center text-center gap-6 pb-12">
+    <section id="connection" className="w-full mt-5 pt-10 border-t border-white/5 flex flex-col items-center text-center gap-6 pb-12 scroll-mt-28">
 
       {/* Icon */}
       <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">

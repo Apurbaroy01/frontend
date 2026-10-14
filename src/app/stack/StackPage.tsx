@@ -331,7 +331,7 @@ export default function StackPage() {
             : stack.filter((item) => item.category === activeTab);
 
     return (
-        <section className="w-full max-w-6xl mx-auto px-6 py-5 text-white relative">
+        <section id="stack" className="w-full max-w-6xl mx-auto px-6 py-5 text-white relative scroll-mt-28">
 
             {/* Glow */}
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-500/10 via-cyan-500/10 to-green-500/10 blur-3xl"></div>

@@ -3,6 +3,12 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 
+interface MeteorStyle {
+  left: number;
+  delay: number;
+  duration: number;
+}
+
 export const Meteors = ({
   number = 20,
   className,
@@ -10,16 +16,20 @@ export const Meteors = ({
   number?: number;
   className?: string;
 }) => {
-  const [meteors, setMeteors] = useState<any[]>([]);
+  const [meteors, setMeteors] = useState<MeteorStyle[]>([]);
 
   useEffect(() => {
-    const generated = new Array(number).fill(0).map(() => ({
+    const generated: MeteorStyle[] = Array.from({ length: number }, () => ({
       left: Math.floor(Math.random() * 800 - 400),
       delay: Math.random() * 0.6 + 0.2,
       duration: Math.floor(Math.random() * 8 + 2),
     }));
 
-    setMeteors(generated);
+    const timer = setTimeout(() => {
+      setMeteors(generated);
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, [number]);
 
   return (

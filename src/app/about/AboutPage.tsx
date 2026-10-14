@@ -30,11 +30,11 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row gap-8 items-stretch">
 
                 {/* Left Section */}
-                <div className="w-full md:w-1/2 flex flex-col  gap-8">
+                <div className="w-full md:w-1/2 flex flex-col  gap-6">
                     <MeteorsDemo />
 
                     {/* Stats */}
-                    <div className=" grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className=" grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                         {/* Stat 1 */}
                         <div className="relative flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
@@ -51,7 +51,7 @@ export default function AboutPage() {
                         </div>
 
                         {/* Stat 2 */}
-                        <div className="relative flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                        <div className="relative flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                             <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/10 border border-white/20">
                                 <FiFolder size={20} />
                             </div>

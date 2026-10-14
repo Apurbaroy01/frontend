@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin, FaDribbble, FaDownload } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import { BadgeCheck, CheckIcon } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
 import { BorderBeam } from "@/components/ui/border-beam";
 import Link from "next/link";
 
@@ -49,7 +49,7 @@ export default function HeroPage() {
 
         {/* Title */}
         <h1 className="text-2xl md:text-5xl font-bold leading-tight">
-          Hey, I'm{" "}
+          Hey, I&apos;m{" "}
           <span className="text-purple-400">Apurba Roy ✨</span>
           <br />
           A{" "}
@@ -66,9 +66,12 @@ export default function HeroPage() {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <button className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition">
+          <a
+            href="mailto:apurbaroy00011@gmail.com"
+            className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-medium hover:bg-gray-200 transition"
+          >
             <FiMail /> Contact Me
-          </button>
+          </a>
 
           <Link href="https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?usp=sharing" target="_blank" className="flex items-center gap-2 px-5 py-2 rounded-lg border border-gray-600 hover:bg-gray-800 transition">
             <FaDownload /> Resume

@@ -6,7 +6,7 @@ export function MeteorsDemo() {
         <div className="">
             <div className=" w-full max-w-full mx-auto relative">
 
-                <div className="flex-1 relative group rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 hover:border-white/20 hover:bg-white/10 transition-all duration-500 overflow-hidden">
+                <div className="flex-1 relative group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:border-white/20 hover:bg-white/10 transition-all duration-500 overflow-hidden">
                     <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -30,14 +30,11 @@ export function MeteorsDemo() {
 
                     <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
                         I’m <span className="text-white font-medium">Apurba Roy</span>, a
-                        Full Stack Software Engineer ( MERN ) Building scalable web applications from Design to Deployment.
+                        Full Stack Software Engineer Building scalable web applications from Design to Deployment.
                     </p>
 
-                    <p className="font-normal text-base text-slate-500  relative z-50">
-                        I build scalable and secure full-stack applications with the MERN stack,
-                        specializing in React, Next.js, Node.js, and MongoDB while focusing on
-                        performance optimization, clean architecture, and intuitive user experiences
-                        that are built to grow with business needs.
+                    <p className="font-normal text-base text-slate-400 relative z-50 leading-relaxed">
+                        I engineer scalable, secure, and production-ready full-stack applications specializing in React, Next.js, Node.js, PostgreSQL, Prisma, and MongoDB. Focused on clean architecture, robust database design, and intuitive user experiences, I deliver resilient systems built to scale seamlessly with modern business needs.
                     </p>
 
                     {/* Meaty part - Meteor effect */}

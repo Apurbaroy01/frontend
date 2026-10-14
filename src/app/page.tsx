@@ -7,6 +7,8 @@ import Connection from "./connection/page";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import WorkPage from "./work/page";
+import WorkExperience from "./experience/page";
+import FloatingWhatsAppWidget from "@/components/WhatsAppAssistant/FloatingWhatsAppWidget";
 
 
 export const metadata: Metadata = {
@@ -16,14 +18,18 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Hero />
       <About />
       <DatabaseWithRestApi />
       <Stack />
       <WorkPage />
+      <WorkExperience />
       <Educations />
       <Connection />
+
+      {/* ── FLOATING WHATSAPP AI ASSISTANT WIDGET (Client Component) ── */}
+      <FloatingWhatsAppWidget />
     </div>
   );
 }
