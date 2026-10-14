@@ -8,8 +8,6 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import WorkPage from "./work/page";
 import WorkExperience from "./experience/page";
-import FloatingWhatsAppWidget from "@/components/WhatsAppAssistant/FloatingWhatsAppWidget";
-
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -27,9 +25,6 @@ export default function Home() {
       <WorkExperience />
       <Educations />
       <Connection />
-
-      {/* ── FLOATING WHATSAPP AI ASSISTANT WIDGET (Client Component) ── */}
-      <FloatingWhatsAppWidget />
     </div>
   );
 }

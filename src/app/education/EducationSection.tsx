@@ -200,7 +200,7 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="relative bg-transparent w-full max-w-6xl mx-auto px-6 py-20 flex flex-col items-center overflow-hidden scroll-mt-24"
+      className="relative bg-transparent w-full max-w-6xl mx-auto px-4 sm:px-6 py-20 flex flex-col items-center overflow-hidden scroll-mt-24"
     >
       {/* Background Depth Glow */}
       <div className="absolute w-[500px] h-[500px] bg-purple-500/10 blur-[140px] rounded-full top-[-100px] -left-20 pointer-events-none" />
@@ -239,7 +239,7 @@ export default function EducationSection() {
         />
 
         {/* Alternating Branches Stack */}
-        <div className="flex flex-col gap-2 md:gap-6">
+        <div className="flex flex-col gap-4 md:gap-6">
           {educationData.map((item, index) => {
             const isRight = index % 2 !== 0;
 
@@ -267,7 +267,7 @@ export default function EducationSection() {
 
                 {/* ── CARD (takes left or right 50% on desktop, full width on mobile) ── */}
                 <div
-                  className={`w-full pl-4 md:pl-0 md:w-1/2 ${isRight ? "md:pl-8" : "md:pr-8"
+                  className={`w-full pl-8 md:pl-0 md:w-1/2 ${isRight ? "md:pl-8" : "md:pr-8"
                     }`}
                 >
                   <EducationCard item={item} />

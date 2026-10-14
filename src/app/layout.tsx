@@ -7,6 +7,7 @@ import Footer from "@/components/Shared/footer";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import FloatingWhatsAppWidget from "@/components/WhatsAppAssistant/FloatingWhatsAppWidget";
 
 
 
@@ -88,13 +89,12 @@ export default function RootLayout({
           numSquares={30}
           className={cn(
             "[mask-image:radial-gradient(500px_transparent)]",
-            "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12 fixed",
+            "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12 fixed -z-10 pointer-events-none",
           )}
         />
 
         <AOSProvider />
         <Navbar />
-
 
         {/* Content */}
         <div className="relative z-10 text-white mt-25">
@@ -102,6 +102,7 @@ export default function RootLayout({
         </div>
 
         <Footer />
+        <FloatingWhatsAppWidget />
       </body>
       <GoogleAnalytics gaId="G-8Z507DKRFP" />
     </html>

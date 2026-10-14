@@ -495,7 +495,7 @@ export default function WhatsAppAssistant() {
           display: "flex",
           alignItems: "center",
           gap: 10,
-          padding: "8px 12px",
+          padding: "8px 42px 8px 12px",
           background: C.panel,
           borderBottom: `1px solid ${C.border}`,
           zIndex: 10,

@@ -19,11 +19,11 @@ export default function FloatingWhatsAppWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-20 right-4 w-[360px] max-w-[calc(100vw-2rem)] h-[min(580px,calc(100vh-6rem))] z-[99999] shadow-2xl rounded-2xl overflow-hidden border border-emerald-500/30 bg-[#0b141a]"
+            className="fixed bottom-20 right-3 sm:right-6 w-[calc(100vw-1.5rem)] sm:w-[380px] max-w-[400px] h-[min(580px,calc(100vh-10.5rem))] z-[99999] shadow-2xl rounded-2xl overflow-hidden border border-emerald-500/30 bg-[#0b141a]"
           >
             <button
               onClick={() => setShowFloatingBot(false)}
-              className="absolute top-2 right-2 z-50 bg-[#202c33] text-[#8696a0] hover:text-white rounded-full w-7 h-7 flex items-center justify-center transition-colors"
+              className="absolute top-2.5 right-2.5 z-50 bg-[#202c33] text-[#8696a0] hover:text-white rounded-full w-7 h-7 flex items-center justify-center transition-colors shadow"
               title="Close Chat"
             >
               <IoClose size={16} />
