@@ -515,7 +515,7 @@ export default function WhatsAppAssistant() {
           }}
         >
           <Image
-            src="/apurba.jpg"
+            src="/me.jpg"
             alt="Apurba Roy"
             fill
             style={{ objectFit: "cover" }}
@@ -532,6 +532,7 @@ export default function WhatsAppAssistant() {
               background: "#00a884",
               border: `2px solid ${C.panel}`,
             }}
+            
           />
         </div>
 
@@ -545,6 +546,7 @@ export default function WhatsAppAssistant() {
               whiteSpace: "nowrap",
               overflow: "hidden",
               textOverflow: "ellipsis",
+              
             }}
           >
             Apurba Roy
@@ -626,6 +628,7 @@ export default function WhatsAppAssistant() {
             textAlign: "center",
             lineHeight: 1.4,
             margin: "0 10px 10px",
+            display: "flex",
           }}
         >
           <MdLock size={12} style={{ marginRight: 4, verticalAlign: "middle" }} />
