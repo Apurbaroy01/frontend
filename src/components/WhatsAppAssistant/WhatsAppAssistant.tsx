@@ -19,61 +19,78 @@ interface ChatMessage {
 }
 
 /* ─────────────── SYSTEM PROMPT ─────────────── */
-const SYSTEM_PROMPT = `You are the official WhatsApp AI assistant for Apurba Roy (Dev Apurba Roy), a passionate Full-Stack Software Engineer and MERN Stack Developer based in Bangladesh.
+const SYSTEM_PROMPT = `You are the official WhatsApp AI assistant for Apurba Roy (Dev Apurba Roy), a passionate Software Engineer and MERN Stack Developer & Instructor based in Khulna, Bangladesh.
 
-PROFILE OVERVIEW:
-- Name: Apurba Roy (Dev Apurba Roy)
-- Title: Full Stack Software Engineer | MERN Stack Developer
-- Location: Bangladesh (GMT+6)
-- Experience: 2+ Years of Continuous Development, 9+ Successfully Delivered Production Projects
-- Email: apurbaroy00011@gmail.com
-- WhatsApp / Phone: +8801311271610 (01311271610)
-- Portfolio: https://apurbaroy.vercel.app
-- GitHub: https://github.com/Apurbaroy01
-- LinkedIn: https://www.linkedin.com/in/apurba-roy01
-- Facebook: https://www.facebook.com/Apurbaroy01
-- Resume Link: https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?usp=sharing
-- Working Hours: Mon-Fri, 9:00 AM - 6:00 PM (BD Time) — Available for freelance & full-time roles worldwide.
+PERSONAL & DEMOGRAPHIC INFORMATION:
+- Full Name: Apurba Roy (Dev Apurba Roy)
+- Date of Birth: May 8, 2004
+- Gender: Male
+- Current Location: Sonadanga, Khulna, Bangladesh (GMT+6)
+- Nationality: Bangladeshi
+- Languages: Bengali (Native), English (Professional)
 
-TECHNICAL SKILLS & STACK:
-- Frontend: React.js, Next.js (App Router, SSR, SSG), TypeScript, JavaScript (ES6+), Tailwind CSS, Framer Motion, Hero UI, DaisyUI, Radix UI, React Query, React Router, HTML5, CSS3.
-- Backend: Node.js, Express.js, RESTful APIs, JWT Authentication, WebSockets (Socket.io), Redis caching.
-- Databases: MongoDB (Mongoose), PostgreSQL, Prisma ORM, Supabase.
-- DevOps, Cloud & Tools: Docker, Nginx, AWS, Git, GitHub, Linux, Vercel, Netlify, cPanel, Hostinger, Postman, Firebase, Auth0.
+PROFESSIONAL EXPERIENCE & ROLES:
+- Current Role: Software Engineer at Airtech IT (Khulna, Bangladesh) and MERN Stack Instructor / Trainer.
+  * Conducts hands-on training sessions covering MongoDB, Express.js, React/Next.js, Node.js.
+  * Mentors junior developers/trainees on clean code architecture, Git workflows, and capstone deployments.
+- Industrial Attachment Trainer at City IT Park (Khulna).
+- Software Engineer at CYBRFLUX (September 2026 – Present, Remote - USA):
+  * Engineered financial services web applications (Next Level Wealth, Next Level Solar) using Next.js, Node.js, Express, MongoDB, Mongoose, and Redis.
+  * Built product management, role-based admin dashboard, REST APIs, and backend optimization.
+- Overall Experience: 2+ Years of continuous web engineering, system architecture, and modern DevOps.
+
+EDUCATION & STUDENT DETAILS:
+- Currently Pursuing: Diploma in Computer Engineering at Mangrove Institute of Science & Technology (2021–2025).
+- Programming Hero: Enrolled as an active student in the 7th batch of "Next Level Web Development" / "Next Level AI-Driven Software Engineering Bootcamp" (Student ID: L2B7-1304).
+- TechLabs: Web Development Industrial Attachment Training (2025).
+- Programming Hero: Complete Web Development Course (2025).
+- Secondary School Certificate (SSC): Rajapur Adarsha High School (2020–2021).
+- Reference: Jhankar Mahbub (Founder, Programming Hero).
+
+TECHNICAL SKILLS & TECH STACK:
+- Programming Languages & Frameworks: JavaScript (ES6+), TypeScript, React.js, Next.js (App Router, SSR, SSG), Node.js, Express.js.
+- Databases & Caching: MongoDB (Mongoose), PostgreSQL, Prisma ORM, Redis server, Supabase.
+- Web Scraping & Data Extraction: Cheerio, Axios, ExcelJS (Node.js) and Python (Pandas, BeautifulSoup).
+- Frontend & Styling: Tailwind CSS, DaisyUI, Material UI, Shadcn UI, Hero UI, Framer Motion, React Query, React Router, Socket.io, HTML5, CSS3.
+- DevOps, Cloud & Server Infrastructure:
+  * Docker & Docker Compose containerization
+  * Hostinger VPS server deployment & maintenance
+  * Nginx reverse proxy configuration & SSL integration
+  * CloudPanel & Linux server administration
+  * Vercel, Netlify, Render
+- Authentication & Security: Better-Auth, Firebase Authentication, JWT (JSON Web Tokens), Role-Based Access Control (RBAC).
+- Tools & Dev Environment: VS Code, Git, GitHub, Postman, NPM, CloudPanel.
 
 FEATURED PROJECTS:
-1. Gitvn Shop (https://gitvnshop.com/):
-   - A full-featured modern eCommerce platform with secure JWT authentication, rich product catalog, shopping cart, checkout, online payment integration, and complete admin dashboard.
-   - Built with Next.js, Node.js, Express.js, MongoDB, and Tailwind CSS.
-2. Interactive Portfolios & 3D Web Apps:
-   - Modern, high-performance web experiences with smooth Framer Motion animations, responsive layouts, and interactive UI components.
-3. Over 9+ production-ready client and enterprise projects delivered successfully.
+1. Enterprise Resource Planning (ERP) Web System:
+   - Built with Next.js, Node.js, Express.js, MongoDB, Mongoose.
+   - Comprehensive resource management for businesses covering employee management, attendance tracking, salary/payroll, asset tracking, product inventory, and granular permission-based access control.
+2. E-Commerce Web Application (Gitvn Shop & Modern Stores):
+   - Built with Next.js, Node.js, Express.js, MongoDB, Tailwind CSS.
+   - Includes full product catalog, search & filter, cart, secure checkout, payment gateway integration, JWT authentication, and comprehensive role-based admin dashboard.
+3. Doctor Appointment Management System:
+   - Tech Stack: Next.js, Node.js, Mongoose, Redis server, MongoDB, Docker, Nginx.
+   - Web system for booking appointments and scheduling, role-based access for Patients, Doctors, and Admins, specialty search, and admin control.
+4. Financial Web Applications (CYBRFLUX Remote USA):
+   - Next Level Wealth & Next Level Solar (Next.js, Node.js, MongoDB, Redis).
+5. Secure Authentication Systems:
+   - Better Auth, Firebase Authentication, and JWT with token authorization & Firebase Admin verification.
 
-EDUCATION & TRAINING:
-1. 2026 — Present: Next Level AI-Driven Software Engineering Bootcamp (Programming Hero)
-   - Advanced full-stack mastery: TypeScript, Next.js, Node.js, MongoDB, Docker, Nginx, Prisma, PostgreSQL, AWS, and system architecture.
-2. 2025 — Present: Industrial Attachment in Web Development (TechLabs)
-   - Hands-on industry training on production-grade MERN architecture and client delivery.
-3. 2024: Complete Web Development Course (Programming Hero)
-   - Intensive React, Node.js, Express, and MongoDB curriculum.
-4. 2020 — 2024: Diploma in Computer Engineering (Mangrove Institute of Science & Technology)
-   - Core computer science fundamentals, programming logic, data structures, and networking.
-5. 2018 — 2020: Secondary School Certificate (SSC) in Science (Kotalipara High School).
-
-SERVICES OFFERED:
-1. Full-Stack Web Applications (React / Next.js + Node.js / Express + MongoDB / PostgreSQL)
-2. Custom eCommerce Solutions (Storefront, cart, payment gateways, admin dashboards)
-3. High-Converting Landing Pages & Corporate Websites
-4. Interactive & 3D Portfolios (Three.js, WebGL, Framer Motion)
-5. RESTful API Architecture & Third-Party System Integrations
-6. Database Schema Design, Performance Optimization & Cloud Deployment
+CONTACT & RESUME:
+- WhatsApp / Phone: +8801311271610 (01311271610)
+- Email: apurbaroy00011@gmail.com
+- Portfolio Website: https://apurbaroy.vercel.app/
+- GitHub: https://github.com/apurbaroy01
+- LinkedIn: https://www.linkedin.com/in/apurba-roy01
+- Resume (Google Docs): https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?tab=t.0
 
 TONE & FORMATTING RULES:
 - Keep answers short, friendly, accurate, and easy to read on mobile.
 - Use WhatsApp formatting ONLY: *bold*, _italics_, ~strikethrough~
 - 1-2 emojis max per message.
-- NEVER sound robotic. Be a friendly, professional representative for Apurba.
-- Guide potential clients or employers to reach out directly to Apurba on WhatsApp (+8801311271610) or via Email (apurbaroy00011@gmail.com).`;
+- NEVER sound robotic. Be a friendly, professional representative for Apurba Roy.
+- When asked for a resume or CV, always share the Google Docs link: https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?tab=t.0
+- Guide visitors and clients to reach out directly via WhatsApp (+8801311271610) or Email (apurbaroy00011@gmail.com).`;
 
 /* ─────────────── FORMATTING ─────────────── */
 function parseWA(text: string): string {
@@ -98,10 +115,12 @@ function parseWA(text: string): string {
 /* ─────────────── QUICK REPLIES ─────────────── */
 const QUICK = [
   { label: "👨‍💻 About Apurba", msg: "Tell me about Apurba Roy." },
+  { label: "💼 Experience", msg: "Tell me about Apurba's professional experience and job roles." },
   { label: "⚡ Tech Stack", msg: "What is Apurba's tech stack and skills?" },
-  { label: "🚀 Featured Projects", msg: "What projects has Apurba built?" },
-  { label: "🎓 Education", msg: "What is Apurba's educational background?" },
-  { label: "📄 Resume", msg: "Can you share Apurba's resume?" },
+  { label: "🚀 Projects & ERP", msg: "What projects has Apurba built (E-Commerce, ERP)?" },
+  { label: "🎓 Education & ID", msg: "What is Apurba's educational background and student ID?" },
+  { label: "🕷️ Data Scraping", msg: "Tell me about Apurba's data scraping skills with Cheerio & Python." },
+  { label: "📄 Resume / CV", msg: "Can you share Apurba's resume Google Doc?" },
   { label: "📬 Contact Details", msg: "How can I contact Apurba Roy?" },
 ];
 
@@ -145,10 +164,10 @@ function ts() {
 
 /* ─────────────── CONFIG ─────────────── */
 const WA_NUMBER = "8801311271610"; // Apurba Roy — BD country code
-const PORTFOLIO_URL = "https://apurbaroy.vercel.app";
-const RESUME_URL = "https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?usp=sharing";
+const PORTFOLIO_URL = "https://apurbaroy.vercel.app/";
+const RESUME_URL = "https://docs.google.com/document/d/1CgOpQREfjU4EgBg_HQWmFKSpUbdMjJeN1ILGkwo-Rvk/edit?tab=t.0";
 const EMAIL = "apurbaroy00011@gmail.com";
-const GITHUB_URL = "https://github.com/Apurbaroy01";
+const GITHUB_URL = "https://github.com/apurbaroy01";
 const LINKEDIN_URL = "https://www.linkedin.com/in/apurba-roy01";
 
 export default function WhatsAppAssistant() {
@@ -160,7 +179,7 @@ export default function WhatsAppAssistant() {
     {
       id: 1,
       from: "bot",
-      text: "Hey! 👋 I'm Apurba Roy's AI Assistant.\n\nAsk me anything about Apurba's skills, projects, education, or tap WhatsApp above to connect directly! 🚀",
+      text: "Hey! 👋 I'm Apurba Roy's AI Assistant.\n\nAsk me anything about Apurba's skills, experience at Airtech IT, projects (ERP, E-Commerce), education (Programming Hero Batch 7), or tap WhatsApp above to connect directly! 🚀",
       time: ts(),
     },
   ]);
@@ -220,30 +239,186 @@ export default function WhatsAppAssistant() {
   function getSmartReply(userText: string): string {
     const text = userText.toLowerCase();
 
-    if (text.includes("thank") || text.includes("thanks")) {
+    // 1. Thanks / Farewell
+    if (text.includes("thank") || text.includes("thanks") || text.includes("dhonnobad") || text.includes("ধন্যবাদ")) {
       setChatEnded(true);
       return "Thank you for reaching out to Apurba Roy! 🌟\n\nWe appreciate your time and interest, and look forward to speaking with you on WhatsApp (01311271610). Have a wonderful day ahead!";
     }
 
+    // 2. Personal & Demographic Info (Age, DOB, Birthday, Gender, Location, Address)
     if (
-      text.includes("who") ||
-      text.includes("about") ||
-      text.includes("apurba") ||
-      text.includes("bio") ||
-      text.includes("tell me") ||
-      text.includes("experience")
+      text.includes("dob") ||
+      text.includes("birth") ||
+      text.includes("born") ||
+      text.includes("age") ||
+      text.includes("boyos") ||
+      text.includes("বয়স") ||
+      text.includes("jonmo") ||
+      text.includes("জন্ম") ||
+      text.includes("gender") ||
+      text.includes("male") ||
+      text.includes("location") ||
+      text.includes("address") ||
+      text.includes("khulna") ||
+      text.includes("sonadanga") ||
+      text.includes("thikana") ||
+      text.includes("ঠিকানা") ||
+      text.includes("বাসা") ||
+      text.includes("লোকেশন") ||
+      text.includes("kothay thake") ||
+      text.includes("kothay")
     ) {
       return (
-        "👨‍💻 *Apurba Roy (Dev Apurba Roy)*\n\n" +
-        "• *Role:* Full Stack Software Engineer & MERN Stack Developer\n" +
-        "• *Experience:* 2+ Years of Continuous Development\n" +
-        "• *Projects:* 9+ Production Systems Delivered\n" +
-        "• *Specialization:* Next.js, React, Node.js, Express, MongoDB & TypeScript\n" +
-        "• *Location:* Bangladesh (Available Worldwide 🌍)\n\n" +
-        `View his live portfolio: ${PORTFOLIO_URL}`
+        "👤 *Apurba Roy's Personal Details:*\n\n" +
+        "• *Full Name:* Apurba Roy\n" +
+        "• *Date of Birth:* May 8, 2004\n" +
+        "• *Gender:* Male\n" +
+        "• *Current Location:* Sonadanga, Khulna, Bangladesh 🇧🇩\n" +
+        "• *Profession:* Software Engineer at Airtech IT & MERN Stack Instructor\n\n" +
+        `🌐 Portfolio: ${PORTFOLIO_URL}\n` +
+        `📄 Google Doc Resume: ${RESUME_URL}`
       );
     }
 
+    // 3. Professional Experience & Job Roles (Airtech IT, City IT Park, CYBRFLUX, Instructor, Trainer)
+    if (
+      text.includes("airtech") ||
+      text.includes("cybrflux") ||
+      text.includes("city it") ||
+      text.includes("instructor") ||
+      text.includes("trainer") ||
+      text.includes("mentor") ||
+      text.includes("job") ||
+      text.includes("profession") ||
+      text.includes("career") ||
+      text.includes("company") ||
+      text.includes("কোম্পানি") ||
+      text.includes("চাকরি") ||
+      text.includes("অভিজ্ঞতা")
+    ) {
+      return (
+        "💼 *Apurba Roy's Professional Experience:*\n\n" +
+        "1. *Software Engineer & Trainer* — *Airtech IT* (Khulna, Bangladesh)\n" +
+        "   • Full-stack MERN application engineering and modern DevOps.\n" +
+        "   • Hands-on training on MongoDB, Express, React/Next.js & Node.js, mentoring junior developers.\n\n" +
+        "2. *MERN Stack Instructor* — *City IT Park* (Khulna)\n" +
+        "   • Mentoring students on clean code architecture, Git workflows, and capstone deployments.\n\n" +
+        "3. *Software Engineer* — *CYBRFLUX* (Remote - USA)\n" +
+        "   • Engineered financial services platforms (*Next Level Wealth*, *Next Level Solar*) using Next.js, Node.js, Express, MongoDB & Redis.\n\n" +
+        "• *Total Experience:* 2+ Years of continuous production engineering."
+      );
+    }
+
+    // 4. Education & Student Info (Diploma, Programming Hero, Batch 7, Student ID, TechLabs)
+    if (
+      text.includes("education") ||
+      text.includes("study") ||
+      text.includes("diploma") ||
+      text.includes("student") ||
+      text.includes("batch") ||
+      text.includes("id") ||
+      text.includes("l2b7") ||
+      text.includes("programming hero") ||
+      text.includes("techlabs") ||
+      text.includes("mangrove") ||
+      text.includes("college") ||
+      text.includes("school") ||
+      text.includes("institute") ||
+      text.includes("ssc") ||
+      text.includes("পড়াশোনা") ||
+      text.includes("ডিপ্লোমা") ||
+      text.includes("কোর্স") ||
+      text.includes("ছাত্র")
+    ) {
+      return (
+        "🎓 *Apurba Roy's Educational Background:*\n\n" +
+        "1. *Diploma in Computer Engineering* (2021–2025)\n" +
+        "   • Mangrove Institute of Science & Technology (Currently pursuing Diploma in Engineering).\n\n" +
+        "2. *Next Level AI-Driven Web Development (Batch 7)*\n" +
+        "   • Programming Hero — *Student ID: L2B7-1304*.\n\n" +
+        "3. *Industrial Attachment in Web Development* (2025)\n" +
+        "   • TechLabs (Hands-on MERN & architecture training).\n\n" +
+        "4. *Complete Web Development Course* (2025)\n" +
+        "   • Programming Hero.\n\n" +
+        "5. *Secondary School Certificate (SSC)*\n" +
+        "   • Rajapur Adarsha High School (2020–2021).\n\n" +
+        "• *Reference:* Jhankar Mahbub (Founder, Programming Hero)."
+      );
+    }
+
+    // 5. Data Scraping & Extraction (Cheerio, Axios, Python, Pandas, BeautifulSoup)
+    if (
+      text.includes("scrap") ||
+      text.includes("extract") ||
+      text.includes("cheerio") ||
+      text.includes("axios") ||
+      text.includes("exceljs") ||
+      text.includes("python") ||
+      text.includes("pandas") ||
+      text.includes("beautifulsoup") ||
+      text.includes("স্ক্র্যাপিং")
+    ) {
+      return (
+        "🕷️ *Data Scraping & Extraction Skills:*\n\n" +
+        "• *Node.js Tools:* Cheerio, Axios, ExcelJS (HTML parsing, high-speed HTTP crawling & automated Excel report creation)\n" +
+        "• *Python Tools:* BeautifulSoup, Pandas (web data mining, data cleaning, analysis & automation)\n\n" +
+        "Apurba specializes in reliable web scraping pipelines and data automation solutions!"
+      );
+    }
+
+    // 6. DevOps, Docker, Nginx, Server, VPS, Linux, CloudPanel
+    if (
+      text.includes("devops") ||
+      text.includes("docker") ||
+      text.includes("nginx") ||
+      text.includes("vps") ||
+      text.includes("hostinger") ||
+      text.includes("cloudpanel") ||
+      text.includes("linux") ||
+      text.includes("deploy") ||
+      text.includes("ssl") ||
+      text.includes("server")
+    ) {
+      return (
+        "🛠️ *DevOps & Server Infrastructure:*\n\n" +
+        "• *Containerization:* Docker & Docker Compose\n" +
+        "• *Reverse Proxy & Web Server:* Nginx with SSL & custom domains\n" +
+        "• *Hosting & Servers:* Hostinger VPS, Linux administration, CloudPanel\n" +
+        "• *Cloud Deployments:* Vercel, Netlify, Render\n" +
+        "• *Security & Auth:* Better-Auth, Firebase Authentication, JWT & RBAC"
+      );
+    }
+
+    // 7. Projects & ERP (ERP, E-Commerce, Gitvn Shop, Doctor Appointment, CYBRFLUX)
+    if (
+      text.includes("project") ||
+      text.includes("erp") ||
+      text.includes("commerce") ||
+      text.includes("gitvn") ||
+      text.includes("doctor") ||
+      text.includes("appointment") ||
+      text.includes("wealth") ||
+      text.includes("solar") ||
+      text.includes("প্রজেক্ট") ||
+      text.includes("কাজ")
+    ) {
+      return (
+        "🚀 *Key Featured Projects:*\n\n" +
+        "1. *Enterprise Resource Planning (ERP) System*\n" +
+        "   • Comprehensive enterprise software: employee records, attendance tracking, salary/payroll, asset tracking, inventory & permission-based RBAC.\n\n" +
+        "2. *E-Commerce Web Application (Gitvn Shop)*\n" +
+        "   • Next.js, Node.js, Express, MongoDB, Tailwind CSS.\n" +
+        "   • Product catalog, shopping cart, online payment integration, and role-based admin portal.\n\n" +
+        "3. *Doctor Appointment Management System*\n" +
+        "   • Next.js, Node.js, Redis, MongoDB, Docker, Nginx.\n" +
+        "   • Patient scheduling, doctor slot management & admin control.\n\n" +
+        "4. *Financial Platforms (CYBRFLUX USA)*\n" +
+        "   • Next Level Wealth & Next Level Solar.\n\n" +
+        `🌐 Explore them on his portfolio:\n${PORTFOLIO_URL}`
+      );
+    }
+
+    // 8. Technical Skills & Tech Stack
     if (
       text.includes("skill") ||
       text.includes("stack") ||
@@ -252,101 +427,89 @@ export default function WhatsAppAssistant() {
       text.includes("mern") ||
       text.includes("frontend") ||
       text.includes("backend") ||
-      text.includes("database")
+      text.includes("database") ||
+      text.includes("react") ||
+      text.includes("next") ||
+      text.includes("node") ||
+      text.includes("mongo") ||
+      text.includes("prisma") ||
+      text.includes("postgres") ||
+      text.includes("redis") ||
+      text.includes("স্কিল")
     ) {
       return (
         "⚡ *Apurba Roy's Technical Stack:*\n\n" +
-        "• *Frontend:* React.js, Next.js (App Router, SSR), TypeScript, Tailwind CSS, Framer Motion, Hero UI\n" +
-        "• *Backend:* Node.js, Express.js, RESTful APIs, JWT, Socket.io\n" +
-        "• *Databases:* MongoDB (Mongoose), PostgreSQL, Prisma ORM, Supabase, Redis\n" +
-        "• *DevOps & Tools:* Docker, Nginx, AWS, Git, GitHub, Linux, Vercel, Postman\n\n" +
-        "He builds robust, scalable end-to-end web applications!"
+        "• *Languages & Frameworks:* JavaScript (ES6+), TypeScript, React.js, Next.js (App Router, SSR), Node.js, Express.js\n" +
+        "• *Databases & Caching:* MongoDB (Mongoose), PostgreSQL, Prisma ORM, Redis server, Supabase\n" +
+        "• *Data Scraping:* Cheerio, Axios, ExcelJS, Python (Pandas, BeautifulSoup)\n" +
+        "• *Realtime & Security:* Socket.io, Better-Auth, Firebase Auth, JWT\n" +
+        "• *DevOps:* Docker, Docker Compose, Nginx, Hostinger VPS, CloudPanel, Linux\n" +
+        "• *UI Styling:* Tailwind CSS, DaisyUI, Material UI, Shadcn UI, Hero UI, Framer Motion\n" +
+        "• *Tools:* VS Code, Git, GitHub, Postman, NPM"
       );
     }
 
-    if (
-      text.includes("project") ||
-      text.includes("work") ||
-      text.includes("gitvn") ||
-      text.includes("demo") ||
-      text.includes("portfolio")
-    ) {
-      return (
-        "🚀 *Featured Projects by Apurba Roy:*\n\n" +
-        "1. *Gitvn Shop* (https://gitvnshop.com/)\n" +
-        "   Modern eCommerce with authentication, cart, checkout, payments & admin panel (Next.js, Node.js, MongoDB, Tailwind).\n\n" +
-        "2. *Active Deployments:*\n" +
-        "   Over 9+ successfully delivered production systems across web platforms, business landing pages, and APIs.\n\n" +
-        `🌐 Check them out live on his portfolio:\n${PORTFOLIO_URL}`
-      );
-    }
-
-    if (
-      text.includes("education") ||
-      text.includes("study") ||
-      text.includes("diploma") ||
-      text.includes("bootcamp") ||
-      text.includes("college") ||
-      text.includes("school") ||
-      text.includes("institute")
-    ) {
-      return (
-        "🎓 *Apurba's Educational Timeline:*\n\n" +
-        "• *2026 — Present:* Next Level AI-Driven Software Engineering Bootcamp (Programming Hero)\n" +
-        "• *2025 — Present:* Industrial Attachment in Web Development (TechLabs)\n" +
-        "• *2024:* Web Development Course (Programming Hero)\n" +
-        "• *2020 — 2024:* Diploma in Computer Engineering (Mangrove Institute of Science & Technology)\n" +
-        "• *2018 — 2020:* SSC in Science (Kotalipara High School)"
-      );
-    }
-
+    // 9. Resume / CV / Google Doc
     if (
       text.includes("resume") ||
       text.includes("cv") ||
+      text.includes("doc") ||
+      text.includes("document") ||
+      text.includes("google doc") ||
       text.includes("profile") ||
-      text.includes("download")
+      text.includes("download") ||
+      text.includes("রেজুমে") ||
+      text.includes("সিভি")
     ) {
       return (
-        "📄 *Apurba Roy's Resume & CV:*\n\n" +
-        `You can review and download Apurba's latest Resume here:\n${RESUME_URL}\n\n` +
-        "Feel free to reach out directly if you'd like to schedule an interview!"
+        "📄 *Apurba Roy's Official Resume:*\n\n" +
+        "You can view and read Apurba's latest verified resume directly on Google Docs:\n" +
+        `${RESUME_URL}\n\n` +
+        "It includes verified details of his software engineering roles at Airtech IT, CYBRFLUX, education, technical stack, and references."
       );
     }
 
+    // 10. Contact Details & Socials
     if (
       text.includes("contact") ||
       text.includes("email") ||
       text.includes("phone") ||
       text.includes("number") ||
       text.includes("reach") ||
-      text.includes("call")
+      text.includes("call") ||
+      text.includes("whatsapp") ||
+      text.includes("যোগাযোগ") ||
+      text.includes("নাম্বার")
     ) {
       return (
         "📬 *Get in Touch with Apurba Roy:*\n\n" +
-        `• *WhatsApp:* +${WA_NUMBER}\n` +
+        `• *WhatsApp / Phone:* +${WA_NUMBER} (01311271610)\n` +
         `• *Email:* ${EMAIL}\n` +
+        `• *Location:* Sonadanga, Khulna, Bangladesh\n` +
+        `• *Portfolio:* ${PORTFOLIO_URL}\n` +
         `• *GitHub:* ${GITHUB_URL}\n` +
         `• *LinkedIn:* ${LINKEDIN_URL}\n` +
-        `• *Portfolio:* ${PORTFOLIO_URL}\n\n` +
-        "Tap the *WhatsApp* button above to chat with him right now!"
+        `• *Resume:* ${RESUME_URL}\n\n` +
+        "Tap the *WhatsApp* button at the top to chat with him right now!"
       );
     }
 
+    // 11. GitHub & Socials
     if (
       text.includes("github") ||
       text.includes("linkedin") ||
-      text.includes("facebook") ||
       text.includes("social")
     ) {
       return (
-        "🌐 *Apurba Roy's Social & Code Profiles:*\n\n" +
+        "🌐 *Apurba Roy's Online Profiles:*\n\n" +
         `• *GitHub:* ${GITHUB_URL}\n` +
         `• *LinkedIn:* ${LINKEDIN_URL}\n` +
-        `• *Facebook:* https://www.facebook.com/Apurbaroy01\n` +
-        `• *Portfolio:* ${PORTFOLIO_URL}`
+        `• *Portfolio:* ${PORTFOLIO_URL}\n` +
+        `• *Resume:* ${RESUME_URL}`
       );
     }
 
+    // 12. Services & Freelance Hire
     if (
       text.includes("service") ||
       text.includes("offer") ||
@@ -358,15 +521,37 @@ export default function WhatsAppAssistant() {
     ) {
       return (
         "💼 *Services Offered by Apurba Roy:*\n\n" +
-        "• *Full-Stack Web Apps* (Next.js, React, Node.js, Express, MongoDB)\n" +
-        "• *eCommerce Platforms* (Cart, Payments, Admin Dashboard)\n" +
-        "• *High-Converting Landing Pages & Business Websites*\n" +
-        "• *REST APIs & Database Architecture*\n" +
-        "• *Bug Fixing, Optimization & Deployment*\n\n" +
-        "Tap the *WhatsApp* button above to discuss your project requirements and get a custom quote!"
+        "• *Full-Stack Web Applications* (Next.js, React, Node.js, Express, MongoDB, PostgreSQL)\n" +
+        "• *Enterprise Resource Planning (ERP) Systems*\n" +
+        "• *E-Commerce Solutions & Portals*\n" +
+        "• *Web Scraping & Data Extraction Pipelines* (Cheerio, Python BeautifulSoup/Pandas)\n" +
+        "• *DevOps, Docker Containerization & Hostinger VPS Setup*\n\n" +
+        "Tap the *WhatsApp* button above to discuss your project requirements!"
       );
     }
 
+    // 13. General About / Overview
+    if (
+      text.includes("who") ||
+      text.includes("about") ||
+      text.includes("apurba") ||
+      text.includes("bio") ||
+      text.includes("tell me") ||
+      text.includes("কে")
+    ) {
+      return (
+        "👨‍💻 *Apurba Roy (Dev Apurba Roy)*\n\n" +
+        "• *Role:* Software Engineer at Airtech IT & MERN Stack Instructor\n" +
+        "• *Location:* Khulna, Bangladesh\n" +
+        "• *Date of Birth:* May 8, 2004\n" +
+        "• *Experience:* 2+ Years of continuous web engineering & 9+ production systems\n" +
+        "• *Specialization:* Next.js, Node.js, MongoDB, PostgreSQL, Docker, Nginx & Data Scraping\n\n" +
+        `🌐 Portfolio: ${PORTFOLIO_URL}\n` +
+        `📄 Google Doc Resume: ${RESUME_URL}`
+      );
+    }
+
+    // 14. Availability & Working Hours
     if (
       text.includes("hour") ||
       text.includes("time") ||
@@ -376,27 +561,34 @@ export default function WhatsAppAssistant() {
       return (
         "⏰ *Working Hours:*\n\n" +
         "Apurba is actively available *Mon-Fri, 9:00 AM - 6:00 PM (BD Time)*.\n\n" +
-        "Feel free to send a message on WhatsApp anytime — he will respond as soon as possible!"
+        "Feel free to message on WhatsApp anytime (+8801311271610) — he will reply as soon as possible!"
       );
     }
 
+    // 15. Urgent / ASAP
     if (text.includes("urgent") || text.includes("asap") || text.includes("critical")) {
       return `[URGENT] I have flagged your message as high priority for Apurba Roy (+${WA_NUMBER}). 🚨 He will get back to you shortly!`;
     }
 
+    // 16. Greetings
     if (
       text.includes("hi") ||
       text.includes("hello") ||
       text.includes("hey") ||
       text.includes("aoa") ||
-      text.includes("salam")
+      text.includes("salam") ||
+      text.includes("vai") ||
+      text.includes("bhai") ||
+      text.includes("shunchen")
     ) {
-      return "Hey there! 👋 I'm Apurba Roy's AI Assistant. How can I help you with web development, his projects, or contacting him today?";
+      return "Hey there! 👋 I'm Apurba Roy's AI Assistant. How can I help you regarding his software engineering work at Airtech IT, skills, projects (ERP, E-Commerce), education, or resume?";
     }
 
+    // Default Fallback
     return (
       `_I've noted this inquiry for Apurba Roy (+${WA_NUMBER}). He'll get back to you soon!_ 👍\n\n` +
-      `You can also reach him directly via WhatsApp or email: ${EMAIL}`
+      `You can also reach him directly via WhatsApp or email: ${EMAIL}\n` +
+      `📄 Google Doc Resume: ${RESUME_URL}`
     );
   }
 
@@ -629,6 +821,8 @@ export default function WhatsAppAssistant() {
             lineHeight: 1.4,
             margin: "0 10px 10px",
             display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <MdLock size={12} style={{ marginRight: 4, verticalAlign: "middle" }} />
