@@ -163,7 +163,7 @@ function EducationCard({
             )}
           </div>
 
-          <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-purple-300 transition-colors leading-snug">
+          <h3 className="text-base sm:text-xl font-bold text-white group-hover:text-purple-300 transition-colors leading-snug">
             {item.title}
           </h3>
 
@@ -173,7 +173,7 @@ function EducationCard({
               {item.institute}
             </span>
             <span className="text-zinc-600">•</span>
-            <span>{item.type}</span>
+            <span className="text-[10px]">{item.type}</span>
           </div>
         </div>
 
