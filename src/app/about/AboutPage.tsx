@@ -18,11 +18,15 @@ export default function AboutPage() {
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-600/10 via-blue-500/10 to-pink-500/10 blur-3xl"></div>
 
             {/* Heading */}
-            <div className="flex flex-col gap-2 mb-12 text-center">
-                <h2 className="text-3xl text-center font-semibold  gap-3">
+            <div className="text-center mb-12 z-10">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-purple-400 text-xs font-medium tracking-wide mb-3">
+                    <Icon icon="solar:user-id-linear" className="text-sm" />
+                    <span>About Me</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-semibold text-white tracking-tight">
                     About the Architect
                 </h2>
-                <p className="text-sm text-zinc-400">
+                <p className="text-zinc-400 text-sm mt-1.5 max-w-md mx-auto">
                     My background, mindset, and approach to building scalable systems.
                 </p>
             </div>
@@ -123,7 +127,7 @@ export default function AboutPage() {
                                 <p className="text-xs sm:text-sm text-white font-medium">
                                     Apurba Roy
                                 </p>
-                                <p className="text-[10px] sm:text-xs text-zinc-400">
+                                <p className="text-[10px] sm:text-xs text-zinc-300">
                                     Full Stack Developer
                                 </p>
                             </div>

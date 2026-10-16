@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Folder, HeartHandshakeIcon, SparklesIcon } from "lucide-react";
+import { Code2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface DatabaseWithRestApiProps {
@@ -245,20 +246,24 @@ const DatabaseWithRestApi = ({
             {title ? title : "Data exchange using a customized REST API"}
           </span>
         </div>
-        {/* box outter circle */}
-        <div className="absolute -bottom-8 z-30 grid h-[60px] w-[60px] place-items-center rounded-full border-t bg-[#141516] font-semibold text-xs">
-          {circleText ? circleText : "SVG"}
+        {/* Center Circle with Transparent Blur */}
+        <div className="absolute -bottom-6 z-30 grid h-[50px] w-[50px] place-items-center rounded-full border border-white/15 bg-[#141516]/60 font-semibold text-xs text-slate-200 shadow-xl backdrop-blur-md">
+          {circleText ? (
+            <span>{circleText}</span>
+          ) : (
+            <Code2 className="size-6 text-blue-600 animate-pulse" />
+          )}
         </div>
         {/* box content */}
         <div className="relative z-10 flex h-[150px] w-full items-center justify-center overflow-hidden rounded-lg border bg-transparent backdrop-blur shadow-md">
           {/* Badges */}
           <div className="absolute bottom-8 left-12 z-10 h-7 rounded-full bg-[#101112] px-3 text-xs border flex items-center gap-2 ">
             <HeartHandshakeIcon className="size-4" />
-            <span>{buttonTexts?.first || "LegionDev"}</span>
+            <span>{buttonTexts?.first || "Dev Apurba"}</span>
           </div>
           <div className="absolute right-16 z-10 hidden h-7 rounded-full bg-[#101112] px-3 text-xs sm:flex border items-center gap-2">
             <Folder className="size-4" />
-            <span>{buttonTexts?.second || "v2_updates"}</span>
+            <span>{buttonTexts?.second || "v2.0_release"}</span>
           </div>
           {/* Circles */}
           <motion.div

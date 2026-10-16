@@ -344,8 +344,14 @@ export default function StackPage() {
                 transition={{ duration: 0.5 }}
                 className="mb-12 text-center"
             >
-                <h2 className="text-3xl font-semibold">Core Infrastructure</h2>
-                <p className="text-sm text-zinc-400">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-purple-400 text-xs font-medium tracking-wide mb-3">
+                    <ShieldCheck size={13} />
+                    <span>Technology Stack</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-semibold text-white tracking-tight">
+                    Core Infrastructure
+                </h2>
+                <p className="text-zinc-400 text-sm mt-1.5 max-w-md mx-auto">
                     Technologies I use to build scalable production systems.
                 </p>
             </motion.div>
