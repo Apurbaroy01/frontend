@@ -191,7 +191,7 @@ function ExperienceCard({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3.5">
             <div>
               <div className="flex flex-wrap items-center gap-2.5">
-                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                <h3 className=" sm:text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
                   {exp.role}
                 </h3>
                 {exp.isCurrent && (
@@ -221,7 +221,7 @@ function ExperienceCard({
             </div>
 
             {/* Period & Location Pills */}
-            <div className="flex items-center gap-2 text-xs text-zinc-400 self-start sm:self-auto">
+            <div className="flex items-center gap-2 text-[10px] md:text-base text-zinc-400 self-start sm:self-auto">
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-zinc-300">
                 <Calendar size={12} className="text-cyan-400" />
                 {exp.period}
