@@ -190,7 +190,7 @@ function ExperienceCard({
           {/* Top Bar: Role & Meta info */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3.5">
             <div>
-              <div className="flex flex-wrap items-center gap-2.5">
+              <div className="flex flex-nowrap items-center gap-2.5">
                 <h3 className=" sm:text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
                   {exp.role}
                 </h3>
@@ -270,7 +270,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative bg-transparent w-full max-w-5xl mx-auto px-6 py-16 flex flex-col items-center overflow-hidden scroll-mt-24"
+      className="relative bg-transparent w-full max-w-5xl mx-auto px-3 sm:px-6 py-16 flex flex-col items-center overflow-hidden scroll-mt-24"
     >
       {/* Background Glow Orbs */}
       <div className="absolute w-[450px] h-[450px] bg-cyan-500/10 blur-[130px] rounded-full top-[-80px] -left-20 pointer-events-none" />
@@ -293,11 +293,11 @@ export default function ExperienceSection() {
       {/* ── TIMELINE TRACK WITH CONTINUOUS LASER BEAM ── */}
       <div className="relative w-full pl-6 sm:pl-8 md:pl-10 z-10">
         {/* Base Track Line */}
-        <div className="absolute left-[3px] sm:[left-3px] md:left-[3px] top-4 bottom-4 w-[2px] bg-gradient-to-b from-cyan-500/30 via-purple-500/20 to-transparent" />
+        <div className="absolute left-[2px] sm:[left-3px] md:left-[3px] top-4 bottom-4 w-[2px] bg-gradient-to-b from-cyan-500/30 via-purple-500/20 to-transparent" />
 
         {/* Animated Traveling Laser Beam (Magic/Aceternity effect) */}
         <motion.div
-          className="absolute left-[3px] sm:[left-3px] md:left-[3px] w-[2px] h-32 bg-gradient-to-b from-transparent via-cyan-400 to-transparent blur-[1px] shadow-[0_0_10px_#06b6d4]"
+          className="absolute left-[2px] sm:[left-3px] md:left-[3px] w-[2px] h-32 bg-gradient-to-b from-transparent via-cyan-400 to-transparent blur-[1px] shadow-[0_0_10px_#06b6d4]"
           animate={{
             top: ["0%", "75%", "0%"],
           }}
